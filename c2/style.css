@@ -1,0 +1,613 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* navigation bar details */
+nav{
+    height: 80px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    transition: 0.2s;
+    position: sticky;
+    position: fixed;
+    justify-content: space-between;
+    padding: 0px 7% 0px 3%;
+    border: 10px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.2);
+    z-index: 10;
+}
+nav .logo{
+    font-size: 33px;
+   padding: 8px 10px;
+ }
+  
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 10px 3px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Source Sans Pro';
+    letter-spacing: 1px;
+    padding: 10px ;
+}
+.line{
+    background-color: green;
+    width: 100%;
+    height: 5px;
+}
+.menu-btn{
+    width: 50px;
+    height: 50px;
+    color: grey;
+    cursor: pointer;
+    display: none;
+ }
+ #click{
+     display: none;
+ }
+ #login_nav_btn{
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.sign_up_btn{
+    background-color: #4ea819;
+    border-radius: 6px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+ 
+@media screen  and (max-width:1075px){
+  nav .menu-btn{
+      display: block;
+  }
+    nav .logo {
+        text-align: center;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #ffF;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    #click:checked ~ ul{
+     left: 0%;
+
+ }
+    nav ul li{
+        margin: 40px 0;
+
+    }
+    .sign_up_btn{
+      display: none;
+    } 
+    
+}
+
+
+/* time track free trail detalis */
+#time_tracking_free_trail_box{
+    width: 100%;
+    height: 500px;
+    font-family: 'Source Sans Pro';
+}
+.email_for_free_trail{
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 100px;
+    margin: auto;
+}
+.img_tracking_detalis{
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 150px;
+    margin: auto;
+}
+.img-tracking{
+    width: 85%;
+    height: 75%;
+}
+
+.automatic_text{
+    width: 60%;
+    margin: 20px auto;
+    height: 35%;
+   font-size: 42px;
+   color: #333c43;
+}
+.mobile_app_tracking_text{
+    width: 80%;
+    height: 16%;
+    margin-left: 20%;
+    font-size: 20px;
+    color: #333c43;
+}
+.put_email_trail{
+    width: 80%;
+     height: 16%;
+    margin-left: 20%;
+}
+#email{
+    width: 40%;
+    height: 70%;
+    font-size: 20px;
+    border: 1px solid gray;
+    float: left;
+}
+.email_sumbit_btn{
+    float: left;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 38%;
+    height: 70%;
+    background-color: #4ea819;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    padding-top: 16px;
+}
+.days_14_text{
+    margin-top: 0.6%;
+    margin-left: 20%;
+    color: #70777b;
+    font-size: 18px;
+
+}
+.text-align-center{
+    text-align: center;
+}
+
+/* details features box */
+#detalis_featues{
+    width: 100%;
+    height: 320px;
+    background-color: #4EA819;
+    font-family: 'Source Sans Pro';
+}
+.featur_box {
+    width: 27%;
+    margin-left: 10%;
+    margin-top: 5%;
+    height: 80%;
+    float: left;
+    color: #ffffff;
+}
+.featur_box2 {
+    width: 25%;
+    margin-left: 1%;
+    margin-top: 5%;
+    height: 80%;
+    float: left;
+    color: #ffffff;
+}
+
+#rigth_btn{
+    font-size: 16px;
+    color: aliceblue;
+    padding-top: 5%;
+    padding-left: 2%;
+}
+.font_size_boost{
+    font-size: 26px;
+}
+
+
+/* high professional team choice by desk time CSS */
+#team_box_detalis{
+    width: 100%;
+    height: 450px;
+    background-color: #4EA819;
+    font-family: 'Source Sans Pro';
+}
+.team_box_detalis{
+    color: white;
+}
+.high-performing_text{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 42px;
+   
+}
+.img_box_team{
+    width: 95%;
+    margin-left: 5%;
+}
+.img_line{
+    width: 2px;
+    height: 100px;
+    margin-right: 4%;
+    color: white;
+}
+.img_capture{
+    margin-left: 12%;
+    margin-right: 3%;
+}
+.img_rating{
+    margin-right: 6%;
+}
+ /* slide window of desk time features */
+ #Top_features_box{
+    width: 100%;
+    height: 700px;
+    font-family: 'Source Sans Pro';
+}
+.be_control_text{
+    width: 30%;
+     margin: auto;
+}
+.top_features_btn{
+    width: 60%;
+    height: 9%;
+    background-color:#ebecec ;
+    margin:  2% auto;
+    border: 1px solid #ebecec;
+    border-radius: 5px;
+}
+.dot{
+    width: 19.5%;
+    font-size: 20px;
+    background-color: #ebecec;
+    color: #333c43;
+    border: 0px ;
+    height: 100%;
+    cursor: pointer;
+}
+.slideshow-container{
+    width: 75%;
+    margin: 2.8% auto;
+    height: 50%;
+    position: relative;
+}
+.slide_left_box{
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-top: 40px;
+}
+.slide_rigth_box{
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+}
+.teams_text{
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333c43;
+}
+.font_col{
+    color: #333c43;
+}
+.img_of_slideshow1{
+    width: 500px;
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.active, .dot:hover {
+   background-color: #4EA819;
+   }
+
+ /* traking and monitoring image  */
+#monitoring_box{
+    width: 100%;
+    height: 1800px;    
+}
+.tracking_heading_text{
+    width: 55%;
+    height: 6%;
+    margin: 3% auto;
+    font-size: 42px;
+    color: #333c43;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.monitor_daily_text{
+    width: 40%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    color: #333c43;
+    height: 3%; 
+}
+.features_box_detalis{
+      width: 87%;
+      height: 86%;
+      margin: 2% auto; 
+}
+.features_box1{
+    width: 30%;
+    height: 32.5%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+    box-shadow: 0 0 0.12px gray;
+    background-color: #f5f5f6;
+    float: left;
+}
+.img_time_tracking{
+    width: 340px;
+    height: 280px;
+    padding: 7% 10%;
+}
+.auto_text {
+    width: 80%;
+    height: 40px;
+    font-size: 26px;
+    margin: auto;
+    color: #333c43;
+    text-align: center;
+}
+.fully_automatic_box{
+    width: 80%;
+    height: 27%;
+    margin: auto;
+    font-size: 18px;
+    color: #333c43;
+}
+.learn_more_text{
+    color: #4EA819;
+    text-align: center;
+}
+.see_all_features_btn{
+    width: 15%;
+    height: 2.5%;
+    background-color: #4eA819;
+    margin: auto;
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    border: 0.3px solid black;
+    border: 3px;
+}
+ /* Third Party css */
+ #Third_party_box{
+    width: 100%;
+    height: 500px;
+}
+.third_party_left_box{
+    width: 40%;
+    margin-left: 10%;
+   margin-top: 5%;
+    height: 85%;
+    padding-left: 10%;
+    float: left;
+}
+.third_party_rigth_box{
+    width: 30%;
+    height: 66%;
+    float: left;
+    margin-top: 12%;
+}
+.simplify_text{
+    font-size: 18px;
+    margin-top: 13px;
+    color: #475056;
+}
+.learn_more_btn{
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-top: 10%;
+    padding-top: 13px;
+}
+/* DeskTime country and user number css */
+#desktime_number_box{
+    width: 100%;
+    height: 400px;
+    background-color: #4ea819;
+    color: #ffffff;
+}
+.font_size_track_text{
+    font-size: 18px;
+}
+.number_user_desk_time{
+    width: 90%;
+    height: 45%;
+    margin-left: 7%;
+    margin-top: 5%;
+}
+.font_number{
+    font-size: 90px;
+    margin-bottom: 10px;
+}
+.float_left{
+    float: left;
+    margin-right: 8%;
+}
+.user_text{
+    margin-left: 30%;
+    margin-right: 10%;
+}
+.companies_text{
+    margin-left: 12%;
+}
+/* desktop and mobile app also avaliable detalis */
+#desktop_mobile_box{
+    width: 100%;
+    height: 750px;
+    border: 1px solid #f5f5f6;
+}
+.monitor_text{
+    width: 50%;
+  margin: auto;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 0px;
+  color: #333c43;
+    height: 2%;
+    margin-top: 5%;
+    
+}
+.desktop_mobile_img{
+    width: 60%;
+    height: 80%;
+    margin: 3% auto;
+}
+.desktop_box{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+.mobile_box{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.img_desktop{
+    width: 350px;
+    height: 200px;
+}
+.desktime_desktop_text{
+    font-size: 26px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.img_desktop_icon{
+    width: 80%;
+    margin-left: 30%;
+}
+.icon_margin_rigth{
+    margin-right: 3%;
+}
+.desktime_detalis_text{
+    width: 86%;
+    margin: 5% auto;
+    color: grey; 
+}
+.desktop_learn_more_btn{
+    margin-top: 4px;
+    margin-left: 22%;
+}
+
+ /* flickty sliding window of CEO and Maneger details */
+.carousel-cell {
+    width: 30%;
+   height: 500px;
+    margin-right: 10px;
+      background: #ffffff;
+      border: 1px solid grey;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro';
+    counter-increment: carousel-cell;
+   }
+   .carousel{
+      width: 80%;
+      height: 450px;
+      margin-top: 30px;
+      margin-left: 100px;
+      color: #475056;
+  }
+  .Ceo_manager_detalis_box{
+      width: 100%;
+      margin-top: 40px;
+      height: 700px;
+  }
+  .margin_top_desktime_text{
+      margin-top: 2%;
+  }
+  .manager_img{
+      margin-top: 20px;
+      margin-left: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      float: left;
+  }
+  .manager_img_square{
+     margin-top: 20px;
+      margin-left: 20px;
+      width: 50px;
+      height: 50px;
+      float: left;
+
+  }
+  .name_manager_text{
+      float: left;
+      margin-top: 20px;
+  }
+  .user_text_app{
+      padding-top: 40px;
+      font-size: 36px;
+      width: 68%;
+      height: 10%;
+      margin: auto;
+      text-align: center;
+  }
+  #email2{
+      width: 260px;
+      height: 50px;
+      background-color: #ffffff;
+      border: 1px solid gray;
+      font-size: 20px;
+      margin-left: 30%;
+      margin-top: 100px;
+      float: left;
+      margin-bottom: 20px;
+  }
+  .get_started_btn{
+     width: 200px;
+      height: 50px;
+      background-color: #4ea819;
+      border: 1px solid white;
+      font-size: 20px;
+      margin-left: 3%;
+      color: #ffffff;
+      margin-top: 100px;
+     clear: left;
+     margin-bottom: 20px;
+  }
+  #user_email_box{
+     width: 100%;
+  height: 300px;
+  background-color: #4ea819;
+  color: #ffffff;
+  }
+
+ 
+  
+.bgboximg{
+      width: 400px;
+      height: 400px;
+      margin: auto;
+}
+.bgbox2{
+    border: 1px solid black;
+    margin: 10px;
+    height: 700px;
+    width: 1200px;
+    display: flex;
+}
+.guestbox{
+    border: 1px solid black;
+    height: 400px;
+    width: 1200px;
+    margin: auto;
+} 
+
+
+
+
+
