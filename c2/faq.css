@@ -1,0 +1,113 @@
+.header{
+    text-align: center;
+}
+.header , h2{
+    color: #333c43;
+    font: 42px "Source Sans Pro",sans-serif;
+    margin: 0px 0px 8px;
+}
+header ,p{
+    color: #333c43;
+    font: 18px "Source Sans Pro",sans-serif;
+    margin: 0px 0px 8px;  
+}
+#search_btn{
+    width: 150px;
+    height: 50px;
+    background: #4ea819;
+    padding: 10px 10px;
+}
+#textbox{
+    border: 1px solid #333c43;
+    width: 260px;
+    height: 10px;
+    padding: 20px 20px;
+}
+/* box container */
+#container{
+    display: flex;
+}
+.box1 , h3{
+    color: #333c43;
+    font: 18px "Source Sans Pro",sans-serif;
+    margin: 0px 0px 12px;
+    font-weight: bold;
+}
+.box1{
+    border: 1px solid black;
+    height: 250px;
+    width: 600px;
+    margin: 40px;
+    padding: 20px 24px;
+}
+.imgtick , a{
+    color: #4ea819;
+    font: 16px "Source Sans Pro",sans-serif;
+}
+.viewbox{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #4ea819;
+    padding: 10px 16px;
+    font: 14px "Source Sans Pro",sans-serif;
+    height: 30px;
+    width: 112px;
+    margin: 10px;
+}
+.viewbox a{
+    color: #ffffff;
+}
+.viewbox_margin_top{
+    margin-top: 55px;
+}
+.bottombox{
+    background-color: #4EA819;
+    height: 200px;
+    width: 1320px;
+    font: 16px "Source Sans Pro",sans-serif;
+    padding: 60px 0px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+.bottombox a{
+     color: #ffffff;
+     font: 14px "Source Sans Pro",sans-serif; 
+     margin: 0px 0px 4px;
+}
+.bottombox p{
+    color: #ffffff;
+     font: 14px "Source Sans Pro",sans-serif; 
+     margin: 0px 0px 4px;
+}
+#botttom_email{
+    width: 257px;
+    height: 20px;
+    background-color: #ffffff;
+    padding: 8px 16px;
+    margin: 10px;
+}
+#started{
+    width: 180px;
+    height: 42px;
+    background-color: #ffffff;
+    padding: 7px 32px;
+    font: 20px "Source Sans Pro",sans-serif;
+    margin: 10px;
+}
+.imgtick{
+    width: 100%;
+    height: 50px;
+    display: flex;
+   align-items: center;
+}
+.imgtick>img{
+    width: 30px;
+}
+a:link {
+text-decoration: none;
+}
+ a:hover {
+text-decoration: underline;
+}
+
