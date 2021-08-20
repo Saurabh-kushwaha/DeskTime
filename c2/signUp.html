@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | DeskTime</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+        h1 {
+            font-family: Geogrotesque, sans-serif; 
+            margin: 0%;
+            margin-bottom: 0%;
+            padding-bottom: 0%;
+            font-size: 40px;
+            /* font:  40px Geogrotesque, sans-serif; */
+            color: #364449;
+        }
+        a {
+            text-decoration: none;
+        }
+        #heading > p {
+            color: #777d8c;
+            font-size: 22px;
+        }
+        p {
+            color: #777d8c;
+            font-size: 22px;
+        }
+        #heading {
+            font-family: Geogrotesque, sans-serif;
+            margin: auto;
+            text-align: center;
+            display: block;
+            /* border: 1px solid blue; */
+        }
+        #SignUp-form > p {
+            font-size: 18px;
+            font-family: Geogrotesque, sans-serif;
+        }
+        #SignUp-form > p + p {
+            font-size: 14px;
+            font-family: Geogrotesque, sans-serif;
+        }
+        #SignUp-form {
+            text-align: center;
+            width: 364px;
+            height: 380px;
+            margin: auto;
+            border: 2px solid #dfdddd;
+            border-radius: 3px;
+            font-size: 20px;
+            padding: 16px 30px 20px;
+            color: #777d8c;
+        }
+        ::placeholder {
+            color: #c5c8cf;
+        }
+        input {
+            padding: 12px 16px;
+            width: 295px;
+            height: 20px;
+            font-size: 20px;
+            margin-bottom: 12px;
+            
+        }
+        button:hover {
+            background-color: #275010;
+        }
+        button {
+            width: 330px;
+            height: 50px;
+            background-color: #5FB92A;
+            color: #FFFF;
+            border-radius: 5px;
+            border-width: 2px;
+            font-weight: 600;
+            /* font-stretch: normal; */
+            font-size: 24px;
+            line-height: 1.42;
+            font-family: Geogrotesque, sans-serif;
+            margin-bottom: 10px;
+        }
+        .greentxt:hover {
+            color: #1e4707;
+        }
+        .greentxt {
+            color: #5FB92A;
+            font-weight: 700;
+        }
+        #orConnectWith {
+            width: 364px;
+            height: 88.8px;
+            border: 2px solid #dfdddd;
+            border-radius: 3px;
+            margin: auto;
+            text-align: center;
+            padding: 16px 30px 20px;
+            color: #777d8c;
+        }
+        #orConnectWith > p, #Login-form > p  {
+            margin: 0;
+            margin-bottom: 16px;
+            font-size: 20px;
+            line-height: 1.42;
+            font-family: Geogrotesque, sans-serif;
+        }
+        #orConnectWith div {
+            width: 85px;
+            height: 40px;
+            /* border: 1px solid #b1afaf; */
+            float: left;
+            margin: 2px;
+
+        }
+        #orConnectWith > div > a > img {
+            width: 85px;
+            height: 40px;
+            display: block;
+        }
+        #footer {
+            width: 980px;
+            height: 580px;
+            padding: 40px 20px;
+            /* border: 1px solid #b7ccd8; */
+            margin: auto;
+        }
+        .colFooter {
+            float: left;
+            width: 152px;
+            height: 500px;
+            padding: 0px 20px;
+            /* border: 1px solid #b7ccd8; */
+        }
+        .colFooter > ul > li > a {
+            color: #70777B;
+            list-style: none;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20px;
+            width: 152px;
+            text-decoration: none;
+            
+        }
+        .colFooter > ul > li {
+            color: #70777B;
+            list-style: none;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20px;
+            width: 152px;
+            height: 32px;
+            text-decoration: none;
+        }
+        ._64 {
+            color: #70777B;
+            list-style: none;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20px;
+            width: 152px;
+            height: 64px;
+        }
+        .bold {
+            margin-top: 24px;
+        }
+        .bold1 {
+            margin-top: 12px;
+        }
+        #feet {
+            width: 1050px;
+            height: 40px;
+            /* border: 1px solid #70777B; */
+            margin: auto;
+        }
+        .desktime {
+            float: left;
+            width: 340px;
+            height: 40px;
+            margin-right: 180px;
+        }
+        .svg {
+            width: 200px;
+            height: 40px;
+            float: left;
+            margin-right: 30px;
+        }
+        .svg img {
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+            float: left;
+        }
+        .svg + div {
+            width: 300px;
+            height: 100%;
+            /* margin-right: 20px; */
+            float: left;
+        }
+        #drau {
+            width: 100%;
+            height: 32px;
+            padding: 30px 0px;
+            background-color: #eaeaec;
+            text-decoration-color: #70777B;
+            color: #70777B;
+        }
+        #drau div, #drau div > p  {
+            padding: 0px 20px;
+            float: left;
+            margin: 0%;
+            margin-left: 92px;
+        }
+        #drau div + div{
+            padding: 0px 20px;
+            float: right;
+            margin-right: 220px;
+        }
+        ul > li > a:hover {
+            color: rgb(57, 109, 4);
+            text-decoration: underline;
+        }
+        #feet  img:hover {
+            background-color: #70777B;
+        }
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Register for DeskTime free trial</h1>
+        <p>Over 353k employees use DeskTime. Get your FREE trial in 1 minute</p>
+    </div>
+    <br/>
+    <div id="SignUp-form">
+        <p>Register here</p>
+        <div id="form">
+            <input placeholder="Your email"></input><br/>
+            <input placeholder="Your name"></input><br/>
+            <input placeholder="Your password"></input><br/>
+            <button>Sign up for free</button>
+        </div>
+        <p>Try free for 14 days. No credit card required.</p>
+        <p>By signing up, you agree to our 
+            <a class="greentxt"; href="https://desktime.com/terms">terms</a>
+            and
+            <a class="greentxt"; href="https://desktime.com/privacy">privacy policy.</a>
+        </p>
+    </div>
+    <br/>
+    <div id="orConnectWith">
+        <p>Or connect with</p>
+        <div id="fb">
+            <a href="https://desktime.com/auth/login/facebook">
+                <img src="https://drive.google.com/file/d/1o0fKA5z9qGJvM7DoYyC55WMiTErF7CcR/view?usp=sharing"/>
+            </a>
+        </div>
+        <div id="tw">
+            <a href="https://desktime.com/auth/login/twitter">
+                <img src="https://drive.google.com/file/d/1k5H01qOrHB7h6c7BiB8t1RbX3e--jJMt/view?usp=sharing"/>
+            </a>
+        </div>
+        <div id="ln">
+            <a href="https://desktime.com/auth/login/linkedin">
+                <img src="https://drive.google.com/file/d/1lKhhxU_A2_Zj-3fJUzac1cPyQYZV0IMa/view?usp=sharing"/>
+            </a>
+        </div>
+        <div id="go">
+            <a href="https://desktime.com/auth/login/google">
+                <img src="https://drive.google.com/file/d/11Lb6wnJI0KUdSxZeIaRXAU74Rwc684Xw/view?usp=sharing"/>
+            </a>
+        </div><br/><br/><br/><br/>
+        <p>Are you already registered? <a class="greentxt"; href="https://www.memecreator.org/static/images/memes/4816354.jpg">Log in here</a></p>
+    </div><br/><br/><br/><br/>
+    <div id="footer">
+        <div class="colFooter">
+            <ul>
+                <li>
+                    <a href="https://desktime.com/" data-toggle="collapsed">DeskTime</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/terms">Terms</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/privacy">Privacy</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/cookies">Cookies</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/affiliate-terms">Affiliate terms</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/download">Download app</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/pricing">Pricing</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/affiliate">Affiliate</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/press">Press</a>
+                </li>
+                <li class="_64">
+                    <a href="https://desktime.com/in-your-language">DeskTime in your language</a>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="colFooter">
+            <ul>
+                <li>
+                    <a href="https://desktime.com/learn-more">Learn more</a>
+                </li>
+                <li class="_64">
+                    <a href="https://desktime.com/employee-time-tracking-guide">Employee time tracking</a>
+                </li>
+                <li class="_64">
+                    <a href="https://desktime.com/time-clock-app">Online employee time clock</a>
+                </li>
+                <li class="_64">
+                    <a href="https://desktime.com/best-employee-time-tracking-software">Best time tracking apps</a>
+                </li>
+                <li class="_64">
+                    <a href="https://desktime.com/employee-time-tracking-software-for-companies">DeskTime for Business</a>
+                </li>
+                <li class="_64">
+                    <a href="https://desktime.com/time-tracking-for-freelancers">DeskTime for Freelancers</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/faq">FAQ</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/case-studies">Case Studies</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/webinars">Webinars</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/blog/">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div class="colFooter">
+            <ul>
+                <li>
+                    <a href="https://desktime.com/integrations">Integrations</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/integrations/trello-time-tracking">Trello</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/integrations/basecamp-time-tracking">Basecamp</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/integrations/jira-time-tracking">Jira</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/integrations/asana-time-tracking">Asana</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/integrations/outlook-time-tracking">Outlook Calendar</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/integrations/google-calendar-time-tracking">Google Calendar</a>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="colFooter">
+            <ul>
+                <li>
+                    <a href="https://desktime.com/features">Features</a>
+                </li>
+                <li class="_64">
+                    <a href="https://desktime.com/features/time-tracking">Automatic time tracking</a>
+                </li>
+                <li class="_64">
+                    <a href="https://desktime.com/features/computer-usage-monitoring">URL & App tracking</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/features/time-tracking-with-screenshots">Screenshots</a>
+                </li>
+                <li class="_64">
+                    <a href="https://desktime.com/features/project-time-tracking">Project time tracking</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/features/shift-scheduling">Shift scheduling</a>
+                </li>
+                <li class="_64">
+                    <a href="https://desktime.com/features/offline-time-tracking">Offline time tracking</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/features/time-billing-invoicing">Invoicing</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/features/absence-calendar">Absence Calendar</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/features/mobile-time-tracking">Mobile app</a>
+                </li>
+                <li>
+                    <a href="https://desktime.com/feature-requests">Feature requests</a>
+                </li>
+            </ul>
+        </div>
+        <div class="colFooter">
+            <ul>
+                <li>
+                    <a href="https://desktime.com/support">Contacts</a>
+                </li>
+                <li>
+                    <a href="https://calendly.com/desktime-sales">Schedule a call</a>
+                </li>
+                <li>
+                    <a href="support@desktime.com">Send us an e-mail</a>
+                </li>
+                <li >
+                    <a href="https://desktime.com/in-person-training">Request In-person training</a>
+                </li>
+                <br/>
+                <li>
+                    <a href="https://desktime.com/features#">Open Chat</a>
+                </li>
+                <li class="bold">
+                    <b >WhatsApp</b>
+                </li>
+                <li>+371 27337268</li>
+                <li class="bold1">
+                    <b>Skype</b>
+                </li>
+                <li>desktime.support</li>
+                <li>+13156365354</li>
+            </ul>
+        </div>
+    </div>
+    <div id="feet">
+        <div class="desktime">
+            <img src="https://desktime.com/assets/img/bs4/logo-dark.svg"; alt="Desktime" />
+        </div>
+        <div class="svg">
+            <img src="https://image.flaticon.com/icons/png/128/2111/2111392.png" />
+            <img src="https://image.flaticon.com/icons/png/128/107/107195.png"/>
+            <img src="https://image.flaticon.com/icons/png/128/2111/2111795.png" />
+            <img src="https://image.flaticon.com/icons/png/128/49/49656.png" />
+        </div>
+        <div>
+            <img src="https://desktime.com/assets/img/google-play.svg" />
+            <img src="https://desktime.com/assets/img/app-store.svg" />
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div id="drau">
+        <div>
+            <p>© 2011 - 2021 DeskTime</p>
+        </div>
+        <div>
+            <img src="https://desktime.com/assets/img/draugiem-group.svg" />
+        </div>
+    </div>
+</body>
+</html>
