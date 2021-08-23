@@ -321,10 +321,9 @@ a:link{
     float: left;
 }
 .imgbox{
-    width: 530px;
-    height: 340px;
+    width: 500px;
+    height: 320px;
     margin-left: 30px;
-    margin-bottom: 100px;
 }
 .card_box_desk_time{
     box-shadow: 0 0 10px rgba(0,0, 0, 0.2);
