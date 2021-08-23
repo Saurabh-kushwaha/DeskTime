@@ -48,7 +48,7 @@
             width: 364px;
             height: 380px;
             margin: auto;
-            border: 2px solid #dfdddd;
+            border: 1px solid #c4c5c5;
             border-radius: 3px;
             font-size: 20px;
             padding: 16px 30px 20px;
@@ -62,7 +62,7 @@
             width: 295px;
             height: 20px;
             font-size: 20px;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             
         }
         button:hover {
@@ -80,7 +80,7 @@
             font-size: 24px;
             line-height: 1.42;
             font-family: Geogrotesque, sans-serif;
-            margin-bottom: 10px;
+            margin-bottom: 18px;
         }
         .greentxt:hover {
             color: #1e4707;
@@ -92,14 +92,14 @@
         #orConnectWith {
             width: 364px;
             height: 88.8px;
-            border: 2px solid #dfdddd;
+            border: 1px solid #c4c5c5;
             border-radius: 3px;
             margin: auto;
             text-align: center;
             padding: 16px 30px 20px;
             color: #777d8c;
         }
-        #orConnectWith > p, #Login-form > p  {
+        #orConnectWith > p, #SignUp-form > p  {
             margin: 0;
             margin-bottom: 16px;
             font-size: 20px;
@@ -139,17 +139,18 @@
             font-family: 'Source Sans Pro', sans-serif;
             font-size: 20px;
             width: 152px;
-            text-decoration: none;
-            
         }
-        .colFooter > ul > li {
+        ul > li > a:hover {
+            color: rgb(57, 109, 4);
+            text-decoration: underline;
+        }
+        li {
             color: #70777B;
             list-style: none;
             font-family: 'Source Sans Pro', sans-serif;
             font-size: 20px;
             width: 152px;
             height: 32px;
-            text-decoration: none;
         }
         ._64 {
             color: #70777B;
@@ -170,6 +171,10 @@
             height: 40px;
             /* border: 1px solid #70777B; */
             margin: auto;
+        }
+        #feet  img:hover {
+            background-color: #04aff373;
+            
         }
         .desktime {
             float: left;
@@ -206,20 +211,13 @@
         #drau div, #drau div > p  {
             padding: 0px 20px;
             float: left;
-            margin: 0%;
+            margin: 0;
             margin-left: 92px;
         }
         #drau div + div{
             padding: 0px 20px;
             float: right;
             margin-right: 220px;
-        }
-        ul > li > a:hover {
-            color: rgb(57, 109, 4);
-            text-decoration: underline;
-        }
-        #feet  img:hover {
-            background-color: #70777B;
         }
     </style>
 </head>
@@ -273,7 +271,7 @@
         <div class="colFooter">
             <ul>
                 <li>
-                    <a href="https://desktime.com/" data-toggle="collapsed">DeskTime</a>
+                    <a href="https://desktime.com/" data-toggle="collapsed"; list-style: none>DeskTime</a>
                 </li>
                 <li>
                     <a href="https://desktime.com/terms">Terms</a>
