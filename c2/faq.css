@@ -198,6 +198,7 @@ header ,p{
     margin: auto;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 30px;
 }
 .bottombox a{
      color: #ffffff;
@@ -226,7 +227,7 @@ header ,p{
     margin: 10px;
 }
 .imgtick{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 67px;
     display: flex;
@@ -249,40 +250,40 @@ text-decoration: underline;
         }
 
         .top {
-            border: 2px solid red;
+            /* border: 2px solid red; */
             grid-area: top;
             height: 150px;
         }
         .top_1{
-           border: 2px solid red;
+           /* border: 2px solid red; */
             grid-area: top_1;
             height: 60px;
         }
         .one {
-            border: 2px solid red;
+            /* border: 2px solid red; */
             grid-area: one;
             height: 400px;
         }
 
         .two {
-           border: 2px solid red;
+           /* border: 2px solid red; */
             grid-area: two;
             height: 400px;
         }
 
         .three {
-             border: 2px solid red;
+             /* border: 2px solid red; */
             grid-area: three;
             height: 400px;
         }
 
         .four {
-            border: 2px solid red;
+            /* border: 2px solid red; */
             grid-area: four;
             height: 400px;
         }
         .five{
-            border: 2px solid red;
+            /* border: 2px solid red; */
             grid-area: five;
             height: 400px;
         }
@@ -299,6 +300,10 @@ text-decoration: underline;
                 justify-content: center;
                 text-align: center;
             }
+            .top_1{
+                justify-content: center;
+                text-align: center;
+            }
         }
 
         @media screen and (min-width:600px) {
@@ -311,28 +316,39 @@ text-decoration: underline;
             }
         .desktime_3{
          display: flex;
-         margin-left: 1000px;
-         margin: 20px;
+         margin-left: auto;
         }
         .top{
             display: flex;
+            height: 50px;
+            margin-top: -20px;
         }
+        .top_1{
+            display: flex;
+        }
+        .top_1_img{
+    height: 150px;
+    width: 150px;
+    margin-top: -60px;
+    margin-right: 20px;
+}
         }
 .desktime_1>img{
-    width: 50px;
-    height: 50px;
-    margin: 20px;
+    margin: 5px;
 }
 .svg>img{
     width: 50px;
     height: 50px;
-    /* margin: 20px; */
+    margin: 5px;
 }
 .desktime_2>img{
-    /* width: 50px;
-    height: 50px; */
-    /* margin: 20px; */
+    margin: 5px;
 }
-/* .desktime_img{
-    height: 30px;
-} */
+
+.colFooter , ul , li{
+        list-style: none;
+}
+.color_A{
+    color: #707770;
+    font: 20px 'Source Sans Pro' Sans-sarif;
+}
