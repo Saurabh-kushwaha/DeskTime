@@ -1,522 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A full list of employee time tracking app features | DeskTime</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
-        h1 {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 50px;
-            margin: 0px 0px 20px;
-        }
-        div {
-            border: none; /* 1px solid green; */
-        }
-        #container_1 {
-            background-color: rgba(158, 157, 157, 0.548);
-            color: #ffff;
-            text-align: center;
-            margin: auto;
-        }
-        #intro {
-            width: 50%;
-            height: 190px;
-            margin: auto;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 20px;
-        }
-        #inp-btn {
-            margin: 0px 0px 30px;
-            font-size: 25px;
-            
-        }
-        form > input {
-            color: #bfc3cc;
-            width: 270px;
-            height: 35px;
-            padding: 10px 20px;
-            font-size: 25px;
-            font-family: 'Source Sans Pro', sans-serif;
-            border-radius: 5px;
-            border-width: 0;
-        }
-        form > button:hover {
-            background-color: #306610;
-            border-width: 2px;
-        }
-        form > button {
-            width: 270px;
-            height: 55px;
-            padding: 10px 10px;
-            font-size: 25px;
-            font-family: 'Source Sans Pro', sans-serif;
-            border-radius: 5px;
-            background-color: #4EA819;
-            color: #FFFFFF;
-            border-width: 0;
-        }
-        p > a {
-            color: #55bd1a;
-            text-decoration: none;
-            
-        }
-        p > a:hover {
-            color: rgb(57, 109, 4);
-            text-decoration: underline;
-        }
-        p {
-            margin: 0%;
-            font-size: 20px;
-            color: white;
-        }
-        #keyfeat {
-            width: 1090px;
-            height: 362px;
-            margin: auto;
-        }
-        .keys {
-            width: 320px;
-            height: 362px;
-            text-align: center;
-            float: left;
-            font-family: 'Source Sans Pro', sans-serif;
-            padding: 0px 20.5px;
-
-        }
-        .keys > h3 {
-            font-size: 32.5px;
-            color: #333C43;
-            margin: 20px 0px;
-        }
-        .keys > p {
-            color: #333C43;
-            font-size: 21px;
-            margin: 0px 0px 10px;
-        }
-        #footer {
-            width: 980px;
-            height: 580px;
-            padding: 40px 20px;
-            /* border: 1px solid #b7ccd8; */
-            margin: auto;
-        }
-        .colFooter {
-            float: left;
-            width: 152px;
-            height: 500px;
-            padding: 0px 20px;
-            /* border: 1px solid #b7ccd8; */
-        }
-        li > a {
-            color: #70777B;
-            list-style: none;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 20px;
-            width: 152px;
-            text-decoration: none;
-        }
-        li {
-            color: #70777B;
-            list-style: none;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 20px;
-            width: 152px;
-            height: 32px;
-            text-decoration: none;
-        }
-        ._64 {
-            color: #70777B;
-            list-style: none;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 20px;
-            width: 152px;
-            height: 64px;
-        }
-        .bold {
-            margin-top: 24px;
-        }
-        .bold1 {
-            margin-top: 12px;
-        }
-        #feet {
-            width: 1050px;
-            height: 40px;
-            /* border: 1px solid #70777B; */
-            margin: auto;
-        }
-        .desktime {
-            float: left;
-            width: 340px;
-            height: 40px;
-            margin-right: 180px;
-        }
-        .svg {
-            width: 200px;
-            height: 40px;
-            float: left;
-            margin-right: 30px;
-        }
-        .svg img {
-            width: 30px;
-            height: 30px;
-            margin-right: 20px;
-            float: left;
-        }
-        .svg + div {
-            width: 300px;
-            height: 100%;
-            /* margin-right: 20px; */
-            float: left;
-        }
-        #drau {
-            width: 100%;
-            height: 32px;
-            padding: 30px 0px;
-            background-color: #eaeaec;
-            text-decoration-color: #70777B;
-            color: #70777B;
-        }
-        #drau div, #drau div > p  {
-            padding: 0px 20px;
-            float: left;
-            margin: 0%;
-            margin-left: 92px;
-            color: #70777B;
-            font-size: 22px;
-        }
-        #drau div + div{
-            padding: 0px 20px;
-            float: right;
-            margin-right: 220px;
-        }
-        ul > li > a:hover {
-            color: rgb(57, 109, 4);
-            text-decoration: underline;
-        }
-        #feet  img:hover {
-            background-color: #70777B;
-        }
-        #solution {
-            text-align: center;
-        }
-        #solution > h2 {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 50px;
-            font-weight: 900;
-            margin: 0;
-            color: #333C43;
-        }
-        #solution > p {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 22px;
-            color: #333C43;
-            margin-top: 15px;
-        }
-        #items_16 {
-            height: 530px;
-            width: 69%;
-            margin: auto;
-            /* border: 1px solid green; */
-        }
-        #col1 {
-            width: 33.333333%;
-            float: left;
-        }
-        .itemBox > div + div:hover, .itemBox > div + div > a:hover{
-            color: #55bd1a;
-        }
-        .itemBox {
-            float: left;
-            width: 95%;
-            height: 90%;
-            border: 1px solid #c8ccce;
-            border-radius: 5px;
-            margin: 5px 0px 5px 0px;
-
-        }
-        .itemBox > div > img {
-            width: 70px;
-            height: 70px;
-        }
-        .itemBox > div {
-            float: left;
-            margin: 0px 10px 0px 0px;
-        }
-        .itemBox > div + div {
-            font-family: 'Source Sans Pro', sans-serif;
-            float: left;
-            margin-top: 22px;
-            font-size: 22px;
-            color: #475056;
-            font-weight: 600;
-            padding-left: 10px;
-        }
-        .itemBox > div + div > a {
-            text-decoration: none;
-            color: #475056;
-        }
-        .dual {
-            margin: auto;
-            height: 490px;
-            width: 65%;
-            /* border: 1px solid red; */
-        }
-        .notes_btn {
-            margin: 40px;
-            float: left;
-            width: 50%;
-            font: 20px;
-            font-family: 'Source Sans Pro', sans-serif;
-            padding: 0px 20px;
-        }
-        .notes_btn > h2 {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 52px;
-            color: #333C43;
-            margin: 0px;
-        }
-        .notes_btn > p {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 22px;
-            color: #333C43;
-            margin: 0px 0px 20px;
-        }
-        .dual > .notes_btn > .a_btn:hover {
-            background-color: #357410;
-        }
-        .dual > .notes_btn > .a_btn {
-            font-size: 20px;
-            font-family: 'Source Sans Pro', sans-serif;
-            width: 72%;
-            height: 30px;
-            background-color: #4EA819;
-            text-align: center;
-            padding: 10px;
-            margin: 10px 0px 0px;
-            border-radius: 5px;
-        }
-        .dual > .notes_btn > .a_btn > a {
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-        .dual > .imgOfDual {
-            margin-top: 12%;
-            padding: 0px 20px;
-            float: left;
-            height: 278px;
-            width: 325px;
-            /* border: 1px solid gray; */
-        }
-        .dual > .imgOfDual > img{
-            height: 278px;
-            width: 278px;
-        }
-        .blueTextBox {
-            width: 100%;
-            background-color: #2693F8;
-        }
-        .blueTextBox > h3 {
-            padding: 30px 0px;
-            font-size: 45px;
-            color: #FFFFFF;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-weight: 500;
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A full list of employee time tracking app features | DeskTime</title>
+<link rel="stylesheet" href="features.css">
 </head>
 <body>
-    <div id="container_1">
-        <div id="intro">
-            <h1>DeskTime features to help you excel</h1>
-            <p>Whether you’re a manager who oversees a group of employees, a company owner, or a freelancer that uses a personal computer, private time is a feature for building trust and maintaining professionalism between all parties.</p>
+    <nav>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></label>
+        <div><img src="https://desktime.com/assets/img/bs4/logo-dark.svg" class="logo" /></div>
+        <ul>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Login.html" id="login_nav_btn">LOGIN</a></li>
+            <li><a href="signUp.html" class="sign_up_btn">SIGN UP</a></li>
+        </ul>
+    </nav>
+<br/><br/><br/><br/>
+<div id="container_1">
+    <div id="intro">
+        <h1>DeskTime features to help you excel</h1>
+        <p>Whether you’re a manager who oversees a group of employees, a company owner, or a freelancer that uses a personal computer, private time is a feature for building trust and maintaining professionalism between all parties.</p>
+    </div>
+    <div id="inp-btn">
+        <form>
+            <input type="email" name="email" placeholder="Your work email" />
+            <button type="submit">START FREE TRIAL</button>
+        </form>
+    </div>
+    <p>Free 14-day trial. No credit card required.</p>
+    <p>By signing up, you agree to our <a href="https://desktime.com/terms">terms</a> and <a href="https://desktime.com/privacy">privacy policy</a>.</p>
+</div><br/><br/><br/>
+<div id="keyfeat">
+    <div class="keys">
+        <img src="https://desktime.com/assets/img/bs4/features/boost-productivity.svg" />
+        <h3>Boost productivity by 30%</h3>
+        <p>Identify and eliminate inefficient habits.</p>
+    </div>
+    <div class="keys">
+        <img src="https://desktime.com/assets/img/bs4/features/stay-organized.svg" />
+        <h3>Stay organized and in control</h3>
+        <p>Manage your team and track projects in one place.</p>
+    </div>
+    <div class="keys">
+        <img src="https://desktime.com/assets/img/bs4/features/boost-productivity.svg" />
+        <h3>Save time and manual work</h3>
+        <p>No manual timesheets that take time to fill out and are never 100% reliable.</p>
+    </div>
+</div>
+<br/><br/>
+<hr/>
+<br/><br/>
+<div id="solution">
+    <h2>DeskTime solutions</h2>
+    <p>DeskTime is one of the leading time tracking apps on the market</p>
+</div><br/>
+<div id="items_16">
+    <div id="col1">
+        <div class="itemBox">
+            <div>
+                <img src="./icons/automatic.PNG">
+            </div>
+            <div><a href="ww.pawan.com">Automatic time tracking</a></div>
         </div>
-        <div id="inp-btn">
-            <form>
-                <input type="email" name="email" placeholder="Your work email" />
-                <button type="submit">START FREE TRIAL</button>
-            </form>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/documents.PNG">
+            </div>
+            <div><a href="ww.pawan.com">Document title tracking</a></div>
         </div>
-        <p>Free 14-day trial. No credit card required.</p>
-        <p>By signing up, you agree to our <a href="https://desktime.com/terms">terms</a> and <a href="https://desktime.com/privacy">privacy policy</a>.</p>
-    </div><br/><br/><br/>
-    <div id="keyfeat">
-        <div class="keys">
-            <img src="https://desktime.com/assets/img/bs4/features/boost-productivity.svg" />
-            <h3>Boost productivity by 30%</h3>
-            <p>Identify and eliminate inefficient habits.</p>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/documents.PNG">
+            </div>
+            <div><a href="ww.pawan.com">Cost calculation</a></div>
         </div>
-        <div class="keys">
-            <img src="https://desktime.com/assets/img/bs4/features/stay-organized.svg" />
-            <h3>Stay organized and in control</h3>
-            <p>Manage your team and track projects in one place.</p>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/calender.PNG">
+            </div>
+            <div><a href="ww.pawan.com">Absence calendar</a></div>
         </div>
-        <div class="keys">
-            <img src="https://desktime.com/assets/img/bs4/features/boost-productivity.svg" />
-            <h3>Save time and manual work</h3>
-            <p>No manual timesheets that take time to fill out and are never 100% reliable.</p>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/mobileApp.PNG">
+            </div>
+            <div><a href="ww.pawan.com">Mobile app</a></div>
+        </div>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/screenshots.PNG">
+            </div>
+            <div><a href="ww.pawan.com">Screenshots</a></div>
         </div>
     </div>
-    <br/><br/>
-    <hr/>
-    <br/><br/>
-    <div id="solution">
-        <h2>DeskTime solutions</h2>
-        <p>DeskTime is one of the leading time tracking apps on the market</p>
-    </div><br/>
-    <div id="items_16">
-        <div id="col1">
-            <div class="itemBox">
-                <div>
-                    <img src="https://image.flaticon.com/icons/png/128/4245/4245794.png">
-                </div>
-                <div><a href="ww.pawan.com">Automatic time tracking</a></div>
+    <div id="col1">
+        <div class="itemBox">
+            <div>
+                <img src="./icons/offlineTracking.PNG">
             </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://image.flaticon.com/icons/png/128/2991/2991112.png">
-                </div>
-                <div><a href="ww.pawan.com">Document title tracking</a></div>
-            </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://image.flaticon.com/icons/png/128/2991/2991112.png">
-                </div>
-                <div><a href="ww.pawan.com">Cost calculation</a></div>
-            </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://img-premium.flaticon.com/png/128/2278/premium/2278049.png?token=exp=1629497766~hmac=8cb8de47877bc8bb65369423da5f399f">
-                </div>
-                <div><a href="ww.pawan.com">Absence calendar</a></div>
-            </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://img-premium.flaticon.com/png/128/2664/premium/2664673.png?token=exp=1629497840~hmac=11c27969c8d00acef81659827a3b74a0">
-                </div>
-                <div><a href="ww.pawan.com">Mobile app</a></div>
-            </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://image.flaticon.com/icons/png/128/446/446115.png">
-                </div>
-                <div><a href="ww.pawan.com">Screenshots</a></div>
-            </div>
+            <div><a href="ww.pawan.com">Offline time tracking</a></div>
         </div>
-        <div id="col1">
-            <div class="itemBox">
-                <div>
-                    <img src="https://img-premium.flaticon.com/png/128/1517/premium/1517525.png?token=exp=1629498242~hmac=ef93c32bd2557d8d63b1fbb394c1ae4c">
-                </div>
-                <div><a href="ww.pawan.com">Offline time tracking</a></div>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/pomodoro.PNG">
             </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://img-premium.flaticon.com/png/128/2277/premium/2277966.png?token=exp=1629498300~hmac=eeb84e4d99525c96fca3af96607578e8">
-                </div>
-                <div><a href="ww.pawan.com">Pomodoro timer</a></div>
-            </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://img-premium.flaticon.com/png/128/2859/premium/2859692.png?token=exp=1629498329~hmac=12f542b185bc3f4f303747f4d484ed0b">
-                </div>
-                <div><a href="ww.pawan.com">Team's contacts</a></div>
-            </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://image.flaticon.com/icons/png/128/2605/2605809.png">
-                </div>
-                <div><a href="ww.pawan.com">Third-party Integrations</a></div>
-            </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://image.flaticon.com/icons/png/128/921/921544.png">
-                </div>
-                <div><a href="ww.pawan.com">URL & App tracking</a></div>
-            </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://img-premium.flaticon.com/png/128/3493/premium/3493384.png?token=exp=1629498641~hmac=f80f42c4ab12283f275becd52a7e96f5">
-                </div>
-                <div><a href="ww.pawan.com">Project tracking</a></div>
-            </div>
+            <div><a href="ww.pawan.com">Pomodoro timer</a></div>
         </div>
-        <div id="col1">
-            <div class="itemBox">
-                <div>
-                    <img src="https://image.flaticon.com/icons/png/128/876/876769.png">
-                </div>
-                <div><a href="ww.pawan.com">Private time option</a></div>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/contacts.PNG">
             </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://image.flaticon.com/icons/png/128/522/522575.png">
-                </div>
-                <div><a href="ww.pawan.com">Invoicing</a></div>
+            <div><a href="ww.pawan.com">Team's contacts</a></div>
+        </div>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/integrations.PNG">
             </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://img-premium.flaticon.com/png/128/1321/premium/1321938.png?token=exp=1629499112~hmac=0588e573db70aa0a68e80c26d3d452a1">
-                </div>
-                <div><a href="ww.pawan.com">Custom reports</a></div>
+            <div><a href="ww.pawan.com">Third-party Integrations</a></div>
+        </div>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/url&AppTracking.PNG">
             </div>
-            <div class="itemBox">
-                <div>
-                    <img src="https://img-premium.flaticon.com/png/128/65/premium/65171.png?token=exp=1629499233~hmac=b3179a2536aeea9cdf2adac832bf7c17">
-                </div>
-                <div><a href="ww.pawan.com">Shift Scheduling</a></div>
+            <div><a href="ww.pawan.com">URL & App tracking</a></div>
+        </div>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/projectTracking.PNG">
             </div>
-            
+            <div><a href="ww.pawan.com">Project tracking</a></div>
+        </div>
+    </div>
+    <div id="col1">
+        <div class="itemBox">
+            <div>
+                <img src="./icons/privateTime.PNG">
+            </div>
+            <div><a href="ww.pawan.com">Private time option</a></div>
+        </div>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/invoicing.PNG">
+            </div>
+            <div><a href="ww.pawan.com">Invoicing</a></div>
+        </div>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/customReports.PNG">
+            </div>
+            <div><a href="ww.pawan.com">Custom reports</a></div>
+        </div>
+        <div class="itemBox">
+            <div>
+                <img src="./icons/shiftScheduling.PNG">
+            </div>
+            <div><a href="ww.pawan.com">Shift Scheduling</a></div>
         </div>
         
-        
-    </div><br/><br/>
-    <hr/>
-    <br/><br/>
-    <div class="dual">
-        <div class="notes_btn">
-            <h2>Automatic time tracking</h2><br/>
-            <p>DeskTime time tracker starts and stops working when you do, from the minute you turn on the computer, to the minute you turn it off. No manual data entries - DeskTime tracks and calculates productivity automatically for you. So that you can rely 100% on the data you see.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/time-tracking">MORE ABOUT TIME TRACKING</a>
-            </div>
-        </div>
-        <div class="imgOfDual">
-            <img src=".\images\automatic-time-tracking.png">
-        </div>
-    </div>
-    <div class="blueTextBox">
-        <h3>Get an in-depth view of your team’s workday</h3>
-    </div>
-    <div class="dual">
-        <div class="imgOfDual">
-            <img src="./images/urls.png">
-        </div>
-        <div class="notes_btn">
-            <h2>URL and app tracking</h2><br/>
-            <p>See what websites, programs, and applications your employees use, and categorize them into productive or unproductive for completing their work tasks. Through such internet usage monitoring, see how your employees spend their days, as well as each person's average productivity.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/computer-usage-monitoring">MORE ABOUT URL AND APP TRACKING</a>
-            </div>
-        </div>
-    </div>
-    <div class="dual">
-        <div class="notes_btn">
-            <h2>Document title tracking</h2><br/>
-            <p>Know which tasks your team is working on when they use specific programs, like Excel, Word, Photoshop, etc. Instead of just displaying the total time spent on the program, DeskTime will also record titles of documents or files and time spent on each of them.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/document-title-tracking">MORE ABOUT TITLE TRACKING</a>
-            </div>
-        </div>
-        <div class="imgOfDual">
-            <img src="./images/documents.png">
-        </div>
     </div>
     
+    
+</div><br/><br/>
+<hr/>
+<br/><br/>
+<div class="dual">
+    <div class="notes_btn">
+        <h2>Automatic time tracking</h2><br/>
+        <p>DeskTime time tracker starts and stops working when you do, from the minute you turn on the computer, to the minute you turn it off. No manual data entries - DeskTime tracks and calculates productivity automatically for you. So that you can rely 100% on the data you see.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/time-tracking">MORE ABOUT TIME TRACKING</a>
+        </div>
+    </div>
+    <div class="imgOfDual">
+        <img src=".\images\automatic-time-tracking.png">
+    </div>
+</div>
+<div class="blueTextBox">
+    <h3>Get an in-depth view of your team’s workday</h3>
+</div>
+<div class="dual">
+    <div class="imgOfDual">
+        <img src="./images/urls.png">
+    </div>
+    <div class="notes_btn">
+        <h2>URL and app tracking</h2><br/>
+        <p>See what websites, programs, and applications your employees use, and categorize them into productive or unproductive for completing their work tasks. Through such internet usage monitoring, see how your employees spend their days, as well as each person's average productivity.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/computer-usage-monitoring">MORE ABOUT URL AND APP TRACKING</a>
+        </div>
+    </div>
+</div>
+<div class="dual">
+    <div class="notes_btn">
+        <h2>Document title tracking</h2><br/>
+        <p>Know which tasks your team is working on when they use specific programs, like Excel, Word, Photoshop, etc. Instead of just displaying the total time spent on the program, DeskTime will also record titles of documents or files and time spent on each of them.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/document-title-tracking">MORE ABOUT TITLE TRACKING</a>
+        </div>
+    </div>
+    <div class="imgOfDual">
+        <img src="./images/documents.png">
+    </div>
+</div>
 
 
 
@@ -525,358 +218,370 @@
 
 
 
-    <div class="dual">
-        <div class="imgOfDual">
-            <img src="./images/screenshots.png">
-        </div>
-        <div class="notes_btn">
-            <h2>Auto screenshots</h2><br/>
-            <p>Activate the screenshots feature for a more detailed view of your team’s efficiency and for monitoring remote employees. Every 5, 10, 15 or 30 minutes DeskTime will take a screenshot (regular or blurred) of what everyone is working on and automatically highlight shots that have caught unproductive activities..</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/time-tracking-with-screenshots">MORE ABOUT SCREENSHOTS</a>
-            </div>
+
+<div class="dual">
+    <div class="imgOfDual">
+        <img src="./images/screenshots.png">
+    </div>
+    <div class="notes_btn">
+        <h2>Auto screenshots</h2><br/>
+        <p>Activate the screenshots feature for a more detailed view of your team’s efficiency and for monitoring remote employees. Every 5, 10, 15 or 30 minutes DeskTime will take a screenshot (regular or blurred) of what everyone is working on and automatically highlight shots that have caught unproductive activities..</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/time-tracking-with-screenshots">MORE ABOUT SCREENSHOTS</a>
         </div>
     </div>
-    <div class="dual">
-        <div class="notes_btn">
-            <h2>Offline time tracking</h2><br/>
-            <p>Collect accurate data about the time spent away from the work computer. Specify the reasons for absence and put them down as productive, unproductive, or neutral. That way, you'll have a more precise overview of your team's workload, time management, and productivity.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/offline-time-tracking">MORE ABOUT OFFLINE TIME TRACKING</a>
-            </div>
-        </div>
-        <div class="imgOfDual">
-            <img src="./images/offline-time.png">
+</div>
+<div class="dual">
+    <div class="notes_btn">
+        <h2>Offline time tracking</h2><br/>
+        <p>Collect accurate data about the time spent away from the work computer. Specify the reasons for absence and put them down as productive, unproductive, or neutral. That way, you'll have a more precise overview of your team's workload, time management, and productivity.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/offline-time-tracking">MORE ABOUT OFFLINE TIME TRACKING</a>
         </div>
     </div>
-    <div class="blueTextBox">
-        <h3>Be 100% in control when managing your projects</h3>
+    <div class="imgOfDual">
+        <img src="./images/offline-time.png">
     </div>
-    <div class="dual">
-        <div class="imgOfDual">
-            <img src="./images/projects.png">
-        </div>
-        <div class="notes_btn">
-            <h2>Project time tracking</h2><br/>
-            <p>Track time of individual projects and tasks. Get an idea of the status of your projects, estimate the time required for similar projects in the future, and bill your clients accurately for the work done.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/project-time-tracking">MORE ABOUT PROJECT TIME TRACKING</a>
-            </div>
-        </div>
+</div>
+<div class="blueTextBox">
+    <h3>Be 100% in control when managing your projects</h3>
+</div>
+<div class="dual">
+    <div class="imgOfDual">
+        <img src="./images/projects.png">
     </div>
-    <div class="dual">
-        <div class="notes_btn">
-            <h2>Cost calculation and project billing</h2><br/>
-            <p>Know how much each project cost to the company and how much you should charge your customers with the integrated time billing feature. Set your and the team's hourly rates, and DeskTime will automatically calculate project costs based on time spent working on it.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/project-cost-calculation-billing">MORE ABOUT COST CALCULATION</a>
-            </div>
-        </div>
-        <div class="imgOfDual">
-            <img src="./images/cost.png">
+    <div class="notes_btn">
+        <h2>Project time tracking</h2><br/>
+        <p>Track time of individual projects and tasks. Get an idea of the status of your projects, estimate the time required for similar projects in the future, and bill your clients accurately for the work done.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/project-time-tracking">MORE ABOUT PROJECT TIME TRACKING</a>
         </div>
     </div>
-    <div class="blueTextBox">
-        <h3>Choose an employee-friendly time tracking app</h3>
-    </div>
-    <div class="dual">
-        <div class="imgOfDual">
-            <img src="./images/pomodoro.png">
-        </div>
-        <div class="notes_btn">
-            <h2>Pomodoro timer</h2><br/>
-            <p>Make sure your team not only works hard but also remembers to take breaks to avoid burnouts. Activate the built-in Pomodoro timer that will remind you to take a pause from work every 52, 60 or 90 minutes.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/project-time-tracking">MORE ABOUT POMODORO TIMER</a>
-            </div>
+</div>
+<div class="dual">
+    <div class="notes_btn">
+        <h2>Cost calculation and project billing</h2><br/>
+        <p>Know how much each project cost to the company and how much you should charge your customers with the integrated time billing feature. Set your and the team's hourly rates, and DeskTime will automatically calculate project costs based on time spent working on it.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/project-cost-calculation-billing">MORE ABOUT COST CALCULATION</a>
         </div>
     </div>
-    <div class="dual">
-        <div class="notes_btn">
-            <h2>Private time option</h2><br/>
-            <p>Let your employees feel safe when they need to quickly do something work-unrelated during office hours. Anyone at any time can turn on the Private time feature, and while it's on, the time and websites used won't be tracked.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/private-time">MORE ABOUT PRIVATE TIME</a>
-            </div>
-        </div>
-        <div class="imgOfDual">
-            <img src="./images/private-time.png">
+    <div class="imgOfDual">
+        <img src="./images/cost.png">
+    </div>
+</div>
+<div class="blueTextBox">
+    <h3>Choose an employee-friendly time tracking app</h3>
+</div>
+<div class="dual">
+    <div class="imgOfDual">
+        <img src="./images/pomodoro.png">
+    </div>
+    <div class="notes_btn">
+        <h2>Pomodoro timer</h2><br/>
+        <p>Make sure your team not only works hard but also remembers to take breaks to avoid burnouts. Activate the built-in Pomodoro timer that will remind you to take a pause from work every 52, 60 or 90 minutes.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/project-time-tracking">MORE ABOUT POMODORO TIMER</a>
         </div>
     </div>
-    <div class="dual">
-        <div class="imgOfDual">
-            <img src="./images/absence.png">
-        </div>
-        <div class="notes_btn">
-            <h2>Employee absence calendar</h2><br/>
-            <p>Coordinate time off with the DeskTime employee absence calendar. It allows employees to plan their schedules and let the team know when they’ll be on vacation or home sick. This eliminates unnecessary questions about whereabouts of absent employees and helps you plan everyone’s workload.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/absence-calendar">MORE ABOUT ABSENCE CALENDER</a>
-            </div>
+</div>
+<div class="dual">
+    <div class="notes_btn">
+        <h2>Private time option</h2><br/>
+        <p>Let your employees feel safe when they need to quickly do something work-unrelated during office hours. Anyone at any time can turn on the Private time feature, and while it's on, the time and websites used won't be tracked.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/private-time">MORE ABOUT PRIVATE TIME</a>
         </div>
     </div>
-    <div class="dual">
-        <div class="notes_btn">
-            <h2>Team's contacts</h2><br/>
-            <p>Access the team’s contact information through DeskTime to make communication within the team more efficient. It is no longer necessary to ask a colleague for another colleague’s email or phone number - saves time and interruptions.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/team-contacts">MORE ABOUT TEAM'S CONTACTS</a>
-            </div>
-        </div>
-        <div class="imgOfDual">
-            <img src="./images/contacts.png">
+    <div class="imgOfDual">
+        <img src="./images/private-time.png">
+    </div>
+</div>
+<div class="dual">
+    <div class="imgOfDual">
+        <img src="./images/absence.png">
+    </div>
+    <div class="notes_btn">
+        <h2>Employee absence calendar</h2><br/>
+        <p>Coordinate time off with the DeskTime employee absence calendar. It allows employees to plan their schedules and let the team know when they’ll be on vacation or home sick. This eliminates unnecessary questions about whereabouts of absent employees and helps you plan everyone’s workload.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/absence-calendar">MORE ABOUT ABSENCE CALENDER</a>
         </div>
     </div>
-    <div class="blueTextBox">
-        <h3>Keep up-to-date with your team’s activity</h3>
-    </div>
-    <div class="dual">
-        <div class="imgOfDual">
-            <img src="./images/schedules.png">
-        </div>
-        <div class="notes_btn">
-            <h2>Work Schedules</h2><br/>
-            <p>Plan and schedule your team's shifts more effectively and 6x faster than when using spreadsheets. See a complete daily, weekly, and monthly overview of shifts, avoid overstaffing and understaffing, and track your shift workers' productivity with ease.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/shift-scheduling">MORE ABOUT WORK SCHEDULES</a>
-            </div>
+</div>
+<div class="dual">
+    <div class="notes_btn">
+        <h2>Team's contacts</h2><br/>
+        <p>Access the team’s contact information through DeskTime to make communication within the team more efficient. It is no longer necessary to ask a colleague for another colleague’s email or phone number - saves time and interruptions.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/team-contacts">MORE ABOUT TEAM'S CONTACTS</a>
         </div>
     </div>
-    <div class="dual">
-        <div class="notes_btn">
-            <h2>Mobile app</h2><br/>
-            <p>Oversee the performance of your team not only from your desktop but also from your iPhone or Android device. Use the DeskTime mobile app to log details about your offline time and get access to your company’s performance reports while on the go.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/mobile-time-tracking">MORE ABOUT MOBILE APP</a>
-            </div>
-        </div>
-        <div class="imgOfDual">
-            <img src="./images/platforms.png">
+    <div class="imgOfDual">
+        <img src="./images/contacts.png">
+    </div>
+</div>
+<div class="blueTextBox">
+    <h3>Keep up-to-date with your team’s activity</h3>
+</div>
+<div class="dual">
+    <div class="imgOfDual">
+        <img src="./images/schedules.png">
+    </div>
+    <div class="notes_btn">
+        <h2>Work Schedules</h2><br/>
+        <p>Plan and schedule your team's shifts more effectively and 6x faster than when using spreadsheets. See a complete daily, weekly, and monthly overview of shifts, avoid overstaffing and understaffing, and track your shift workers' productivity with ease.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/shift-scheduling">MORE ABOUT WORK SCHEDULES</a>
         </div>
     </div>
-    <div class="dual">
-        <div class="imgOfDual">
-            <img src="./images/integrations.PNG">
-        </div>
-        <div class="notes_btn">
-            <h2>Integrations with 3rd party apps</h2><br/>
-            <p>Simplify your company’s workflow with DeskTime integrations - from calendar apps to help you track offline time, to project management software to make project and task tracking accurate, while effortless.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/integrations">MORE ABOUT INTEGRATIONS</a>
-            </div>
+</div>
+<div class="dual">
+    <div class="notes_btn">
+        <h2>Mobile app</h2><br/>
+        <p>Oversee the performance of your team not only from your desktop but also from your iPhone or Android device. Use the DeskTime mobile app to log details about your offline time and get access to your company’s performance reports while on the go.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/mobile-time-tracking">MORE ABOUT MOBILE APP</a>
         </div>
     </div>
-    <div class="dual">
-        <div class="notes_btn">
-            <h2>Invoicing</h2><br/>
-            <p>Use your tracked time to create and issue precise invoices to your clients. Gain an overview of sent invoices, as well as their payment status. And send them automated reminders when an invoice is overdue.</p>
-            <div class="a_btn">
-                <a href="https://desktime.com/features/time-billing-invoicing">MORE ABOUT INVOICING</a>
-            </div>
-        </div>
-        <div class="imgOfDual">
-            <img src="./images/invoicing.png">
+    <div class="imgOfDual">
+        <img src="./images/platforms.png">
+    </div>
+</div>
+<div class="dual">
+    <div class="imgOfDual">
+        <img src="./images/integrations.PNG">
+    </div>
+    <div class="notes_btn">
+        <h2>Integrations with 3rd party apps</h2><br/>
+        <p>Simplify your company’s workflow with DeskTime integrations - from calendar apps to help you track offline time, to project management software to make project and task tracking accurate, while effortless.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/integrations">MORE ABOUT INTEGRATIONS</a>
         </div>
     </div>
-    <div class="dual">
-        <div class="imgOfDual">
-            <img src="./images/reports.png">
-        </div>
-        <div class="notes_btn">
-            <h2>Custom reports</h2><br/>
-            <p>Customize reports with the help of various filters to see the exact data you need. For example, use DeskTime Reports to create reports about the company’s productivity status, websites used at work or time spent on specific tasks. Then share, print, or export them to CSV.</p>
+</div>
+<div class="dual">
+    <div class="notes_btn">
+        <h2>Invoicing</h2><br/>
+        <p>Use your tracked time to create and issue precise invoices to your clients. Gain an overview of sent invoices, as well as their payment status. And send them automated reminders when an invoice is overdue.</p>
+        <div class="a_btn">
+            <a href="https://desktime.com/features/time-billing-invoicing">MORE ABOUT INVOICING</a>
         </div>
     </div>
+    <div class="imgOfDual">
+        <img src="./images/invoicing.png">
+    </div>
+</div>
+<div class="dual">
+    <div class="imgOfDual">
+        <img src="./images/reports.png">
+    </div>
+    <div class="notes_btn">
+        <h2>Custom reports</h2><br/>
+        <p>Customize reports with the help of various filters to see the exact data you need. For example, use DeskTime Reports to create reports about the company’s productivity status, websites used at work or time spent on specific tasks. Then share, print, or export them to CSV.</p>
+    </div>
+</div>
+<div class="bottombox">
+    <h1>Start tracking your employees' time with DeskTime!</h1>
+    <p>The time tracking software that over 15.6k employers love and 353k employees don't mind using.</p>
+    <div id="inp-btn">
+        <form>
+            <input type="email" name="email" placeholder="Your work email" />
+            <button type="submit">GET STARTED</button>
+        </form>
+    </div>
+    <p>Try free for 14 days. No credit card required.</p>
+    <p>By signing up, you agree to our <a href="#"> terms </a> and <a href="#"> privacy policy. </a></p>
+</div>
 
 
-
-    <div id="footer">
-        <div class="colFooter">
-            <ul>
-                <li>
-                    <a href="https://desktime.com/" data-toggle="collapsed"; list-style: none>DeskTime</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/terms">Terms</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/privacy">Privacy</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/cookies">Cookies</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/affiliate-terms">Affiliate terms</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/download">Download app</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/pricing">Pricing</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/affiliate">Affiliate</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/press">Press</a>
-                </li>
-                <li class="_64">
-                    <a href="https://desktime.com/in-your-language">DeskTime in your language</a>
-                </li>
-            </ul>
-            
-        </div>
-        <div class="colFooter">
-            <ul>
-                <li>
-                    <a href="https://desktime.com/learn-more">Learn more</a>
-                </li>
-                <li class="_64">
-                    <a href="https://desktime.com/employee-time-tracking-guide">Employee time tracking</a>
-                </li>
-                <li class="_64">
-                    <a href="https://desktime.com/time-clock-app">Online employee time clock</a>
-                </li>
-                <li class="_64">
-                    <a href="https://desktime.com/best-employee-time-tracking-software">Best time tracking apps</a>
-                </li>
-                <li class="_64">
-                    <a href="https://desktime.com/employee-time-tracking-software-for-companies">DeskTime for Business</a>
-                </li>
-                <li class="_64">
-                    <a href="https://desktime.com/time-tracking-for-freelancers">DeskTime for Freelancers</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/faq">FAQ</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/case-studies">Case Studies</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/webinars">Webinars</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/blog/">Blog</a>
-                </li>
-            </ul>
-        </div>
-        <div class="colFooter">
-            <ul>
-                <li>
-                    <a href="https://desktime.com/integrations">Integrations</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/integrations/trello-time-tracking">Trello</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/integrations/basecamp-time-tracking">Basecamp</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/integrations/jira-time-tracking">Jira</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/integrations/asana-time-tracking">Asana</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/integrations/outlook-time-tracking">Outlook Calendar</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/integrations/google-calendar-time-tracking">Google Calendar</a>
-                </li>
-            </ul>
-            
-        </div>
-        <div class="colFooter">
-            <ul>
-                <li>
-                    <a href="https://desktime.com/features">Features</a>
-                </li>
-                <li class="_64">
-                    <a href="https://desktime.com/features/time-tracking">Automatic time tracking</a>
-                </li>
-                <li class="_64">
-                    <a href="https://desktime.com/features/computer-usage-monitoring">URL & App tracking</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/features/time-tracking-with-screenshots">Screenshots</a>
-                </li>
-                <li class="_64">
-                    <a href="https://desktime.com/features/project-time-tracking">Project time tracking</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/features/shift-scheduling">Shift scheduling</a>
-                </li>
-                <li class="_64">
-                    <a href="https://desktime.com/features/offline-time-tracking">Offline time tracking</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/features/time-billing-invoicing">Invoicing</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/features/absence-calendar">Absence Calendar</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/features/mobile-time-tracking">Mobile app</a>
-                </li>
-                <li>
-                    <a href="https://desktime.com/feature-requests">Feature requests</a>
-                </li>
-            </ul>
-        </div>
-        <div class="colFooter">
-            <ul>
-                <li>
-                    <a href="https://desktime.com/support">Contacts</a>
-                </li>
-                <li>
-                    <a href="https://calendly.com/desktime-sales">Schedule a call</a>
-                </li>
-                <li>
-                    <a href="support@desktime.com">Send us an e-mail</a>
-                </li>
-                <li >
-                    <a href="https://desktime.com/in-person-training">Request In-person training</a>
-                </li>
-                <br/>
-                <li>
-                    <a href="https://desktime.com/features#">Open Chat</a>
-                </li>
-                <li class="bold">
-                    <b >WhatsApp</b>
-                </li>
-                <li>+371 27337268</li>
-                <li class="bold1">
-                    <b>Skype</b>
-                </li>
-                <li>desktime.support</li>
-                <li>+13156365354</li>
-            </ul>
-        </div>
+<div id="footer">
+    <div class="colFooter">
+        <ul>
+            <li>
+                <a href="https://desktime.com/" data-toggle="collapsed"; list-style: none>DeskTime</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/terms">Terms</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/privacy">Privacy</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/cookies">Cookies</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/affiliate-terms">Affiliate terms</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/download">Download app</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/pricing">Pricing</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/affiliate">Affiliate</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/press">Press</a>
+            </li>
+            <li class="_64">
+                <a href="https://desktime.com/in-your-language">DeskTime in your language</a>
+            </li>
+        </ul>
+        
     </div>
-    <div id="feet">
-        <div class="desktime">
-            <img src="https://desktime.com/assets/img/bs4/logo-dark.svg"; alt="Desktime" />
-        </div>
-        <div class="svg">
-            <img src="https://image.flaticon.com/icons/png/128/2111/2111392.png" />
-            <img src="https://image.flaticon.com/icons/png/128/107/107195.png"/>
-            <img src="https://image.flaticon.com/icons/png/128/2111/2111795.png" />
-            <img src="https://image.flaticon.com/icons/png/128/49/49656.png" />
-        </div>
-        <div>
-            <img src="https://desktime.com/assets/img/google-play.svg" />
-            <img src="https://desktime.com/assets/img/app-store.svg" />
-        </div>
+    <div class="colFooter">
+        <ul>
+            <li>
+                <a href="https://desktime.com/learn-more">Learn more</a>
+            </li>
+            <li class="_64">
+                <a href="https://desktime.com/employee-time-tracking-guide">Employee time tracking</a>
+            </li>
+            <li class="_64">
+                <a href="https://desktime.com/time-clock-app">Online employee time clock</a>
+            </li>
+            <li class="_64">
+                <a href="https://desktime.com/best-employee-time-tracking-software">Best time tracking apps</a>
+            </li>
+            <li class="_64">
+                <a href="https://desktime.com/employee-time-tracking-software-for-companies">DeskTime for Business</a>
+            </li>
+            <li class="_64">
+                <a href="https://desktime.com/time-tracking-for-freelancers">DeskTime for Freelancers</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/faq">FAQ</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/case-studies">Case Studies</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/webinars">Webinars</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/blog/">Blog</a>
+            </li>
+        </ul>
     </div>
-    <br/>
-    <br/>
-    <div id="drau">
-        <div>
-            <p>© 2011 - 2021 DeskTime</p>
-        </div>
-        <div>
-            <img src="https://desktime.com/assets/img/draugiem-group.svg" />
-        </div>
+    <div class="colFooter">
+        <ul>
+            <li>
+                <a href="https://desktime.com/integrations">Integrations</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/integrations/trello-time-tracking">Trello</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/integrations/basecamp-time-tracking">Basecamp</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/integrations/jira-time-tracking">Jira</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/integrations/asana-time-tracking">Asana</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/integrations/outlook-time-tracking">Outlook Calendar</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/integrations/google-calendar-time-tracking">Google Calendar</a>
+            </li>
+        </ul>
+        
     </div>
+    <div class="colFooter">
+        <ul>
+            <li>
+                <a href="https://desktime.com/features">Features</a>
+            </li>
+            <li class="_64">
+                <a href="https://desktime.com/features/time-tracking">Automatic time tracking</a>
+            </li>
+            <li class="_64">
+                <a href="https://desktime.com/features/computer-usage-monitoring">URL & App tracking</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/features/time-tracking-with-screenshots">Screenshots</a>
+            </li>
+            <li class="_64">
+                <a href="https://desktime.com/features/project-time-tracking">Project time tracking</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/features/shift-scheduling">Shift scheduling</a>
+            </li>
+            <li class="_64">
+                <a href="https://desktime.com/features/offline-time-tracking">Offline time tracking</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/features/time-billing-invoicing">Invoicing</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/features/absence-calendar">Absence Calendar</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/features/mobile-time-tracking">Mobile app</a>
+            </li>
+            <li>
+                <a href="https://desktime.com/feature-requests">Feature requests</a>
+            </li>
+        </ul>
+    </div>
+    <div class="colFooter">
+        <ul>
+            <li>
+                <a href="https://desktime.com/support">Contacts</a>
+            </li>
+            <li>
+                <a href="https://calendly.com/desktime-sales">Schedule a call</a>
+            </li>
+            <li>
+                <a href="support@desktime.com">Send us an e-mail</a>
+            </li>
+            <li >
+                <a href="https://desktime.com/in-person-training">Request In-person training</a>
+            </li>
+            <br/>
+            <li>
+                <a href="https://desktime.com/features#">Open Chat</a>
+            </li>
+            <li class="bold">
+                <b >WhatsApp</b>
+            </li>
+            <li>+371 27337268</li>
+            <li class="bold1">
+                <b>Skype</b>
+            </li>
+            <li>desktime.support</li>
+            <li>+13156365354</li>
+        </ul>
+    </div>
+</div>
+<div id="feet">
+    <div class="desktime">
+        <img src="https://desktime.com/assets/img/bs4/logo-dark.svg"; alt="Desktime" />
+    </div>
+    <div class="svg">
+        <img src="https://image.flaticon.com/icons/png/128/2111/2111392.png" />
+        <img src="https://image.flaticon.com/icons/png/128/107/107195.png"/>
+        <img src="https://image.flaticon.com/icons/png/128/2111/2111795.png" />
+        <img src="https://image.flaticon.com/icons/png/128/49/49656.png" />
+    </div>
+    <div>
+        <img src="https://desktime.com/assets/img/google-play.svg" />
+        <img src="https://desktime.com/assets/img/app-store.svg" />
+    </div>
+</div>
+<br/>
+<br/>
+<div id="drau">
+    <div>
+        <p>© 2011 - 2021 DeskTime</p>
+    </div>
+    <div>
+        <img src="https://desktime.com/assets/img/draugiem-group.svg" />
+    </div>
+</div>
 </body>
 </html>
