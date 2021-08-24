@@ -201,6 +201,7 @@ header ,p{
     margin: auto;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 30px;
 }
 .bottombox a{
      color: #ffffff;
@@ -268,7 +269,7 @@ text-decoration: underline;
         }
 
         .two {
-           border: 2px solid red;
+           /* border: 2px solid red; */
             grid-area: two;
             height: 400px;
         }
@@ -302,6 +303,10 @@ text-decoration: underline;
                 justify-content: center;
                 text-align: center;
             }
+            .top_1{
+                justify-content: center;
+                text-align: center;
+            }
         }
 
         @media screen and (min-width:600px) {
@@ -314,28 +319,39 @@ text-decoration: underline;
             }
         .desktime_3{
          display: flex;
-         margin-left: 1000px;
-         margin: 20px;
+         margin-left: auto;
         }
         .top{
             display: flex;
+            height: 50px;
+            margin-top: -20px;
         }
+        .top_1{
+            display: flex;
+        }
+        .top_1_img{
+    height: 150px;
+    width: 150px;
+    margin-top: -60px;
+    margin-right: 20px;
+}
         }
 .desktime_1>img{
-    width: 50px;
-    height: 50px;
-    margin: 20px;
+    margin: 5px;
 }
 .svg>img{
     width: 50px;
     height: 50px;
-    /* margin: 20px; */
+    margin: 5px;
 }
 .desktime_2>img{
-    /* width: 50px;
-    height: 50px; */
-    /* margin: 20px; */
+    margin: 5px;
 }
+
+.colFooter , ul , li{
+        list-style: none;
+}
+<<<<<<< HEAD
 /* .desktime_img{
     height: 30px;
 } */
@@ -441,4 +457,9 @@ ul > li > a:hover {
 }
 #feet  img:hover {
     background-color: #70777B;
+=======
+.color_A{
+    color: #707770;
+    font: 20px 'Source Sans Pro' Sans-sarif;
+>>>>>>> 57eb6f63cc80cbf5610c0cd2b7785d035e5326fe
 }
