@@ -369,15 +369,16 @@ text-decoration: underline;
 .colFooter , ul , li{
         list-style: none;
 }
-<<<<<<< HEAD
+
 .colFooter , ul , li,a:hover{
     color: #4EA819;
 }
 .color_A{
     color: #707770;
     /* font: 20px 'Source Sans Pro' Sans-sarif; */
-=======
-<<<<<<< HEAD
+}
+
+
 /* .desktime_img{
     height: 30px;
 } */
@@ -483,10 +484,10 @@ ul > li > a:hover {
 }
 #feet  img:hover {
     background-color: #70777B;
-=======
+}
 .color_A{
     color: #707770;
     font: 20px 'Source Sans Pro' Sans-sarif;
->>>>>>> 57eb6f63cc80cbf5610c0cd2b7785d035e5326fe
->>>>>>> a9f033b09be9bcd06f4e68cb5837f46f338a122e
+/* >>>>>>> 57eb6f63cc80cbf5610c0cd2b7785d035e5326fe
+>>>>>>> a9f033b09be9bcd06f4e68cb5837f46f338a122e */
 }

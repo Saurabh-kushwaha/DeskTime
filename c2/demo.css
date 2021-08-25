@@ -1,8 +1,196 @@
+
+/* demo CSS */
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    nav{
+
+        height: 80px;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        transition: 0.2s;
+        position: sticky;
+        position: fixed;
+        justify-content: space-between;
+        padding: 0px 7% 0px 3%;
+        border: 10px solid #fff;
+        box-shadow: 0 0 10px rgba(0,0, 0, 0.2);
+        z-index: 10;
+    }
+
+    nav .logo{
+        font-size: 33px;
+        padding: 8px 8px;
+    }
+
+    nav ul{    
+        display: flex;
+        list-style: none;
+        margin-right: 100px;
+    }
+
+    nav ul li{
+        margin: 10px 10px;
+        /* width: ; */
+        /* border: 1px solid black; */
+    }
+
+    nav ul li a{
+        color: #475056;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Source Sans Pro';
+        letter-spacing: 1px;
+        padding: 10px;
+    }
+    .line{
+        background-color: green;
+        width: 100%;
+        height: 5px;
+    }
+    .menu-btn{
+        width: 50px;
+        height: 50px;
+        color: grey;
+        cursor: pointer;
+        display: none;
+    }
+    #click{
+        display: none;
+    }
+    #login_nav_btn{
+        border: 1px solid gray;
+        border-radius: 6px;
+        /* padding-left: 14px;
+        padding-right: 14px; */
+    }
+    .sign_up_btn{
+        background-color: #4ea819;
+        border-radius: 6px;
+        color: #FFFFFF;
+        /* padding-left: 7px;
+        padding-right: 7px; */
+    }
+    ul > li > a:hover {
+        color: rgb(57, 109, 4);
+        text-decoration: underline;
+    }
+
+ 
+@media screen  and (max-width:1075px){
+  nav .menu-btn{
+      display: block;
+  }
+    nav .logo {
+        text-align: center;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #ffF;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    #click:checked ~ ul{
+     left: 0%;
+
+ }
+    nav ul li{
+        margin: 40px 0;
+
+    }
+    .sign_up_btn{
+      display: none;
+    } 
+    
+}
+
+
+/* time track free trail detalis */
+#time_tracking_free_trail_box{
+    width: 100%;
+    height: 500px;
+    font-family: 'Source Sans Pro';
+}
+.email_for_free_trail{
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 100px;
+    margin: auto;
+}
+.img_tracking_detalis{
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 150px;
+    margin: auto;
+}
+.img-tracking{
+    width: 85%;
+    height: 75%;
+}
+
+.automatic_text{
+    width: 60%;
+    margin: 20px auto;
+    height: 35%;
+   font-size: 42px;
+   color: #333c43;
+}
+.mobile_app_tracking_text{
+    width: 80%;
+    height: 16%;
+    margin-left: 20%;
+    font-size: 20px;
+    color: #333c43;
+}
+.put_email_trail{
+    width: 80%;
+     height: 16%;
+    margin-left: 20%;
+}
+#email{
+    width: 40%;
+    height: 70%;
+    font-size: 20px;
+    border: 1px solid gray;
+    float: left;
+}
+.email_sumbit_btn{
+    float: left;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 38%;
+    height: 70%;
+    background-color: #4ea819;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    padding-top: 16px;
+}
+.days_14_text{
+    margin-top: 0.6%;
+    margin-left: 20%;
+    color: #70777b;
+    font-size: 18px;
+
+}
+.text-align-center{
+    text-align: center;
+}
 .topbgbox{
     /* border: 1px solid black; */
-    height:300px;
-    width: 1335px;
-    padding: 60px 0px;
+    height:270px;
+    width: 100%;
+    padding-top: 130px;
+    margin-bottom: 200px;
 }
 .header{
     /* border: 1px solid red; */
@@ -25,10 +213,7 @@
 b{
    font-weight: bold;
 }
-.imgbox{
-    width: 530px;
-    height: 340px;
-}
+
 #h1{
     width: 538px;
     height: 110px;
@@ -37,36 +222,46 @@ b{
 }
 #p1{
     width: 448px;
-    height: 84px;
+    height: 110px;
     margin: 0px 0px 32px;
     font: 18px 'sourse Sans pro' , sans-serif;
+    line-height: 27px;
 }
 #bookdemo{
-    width: 230px;
-    height: 80px;
+    width: 180px;
+    height: 55px;
     color: #ffff;
     font: 20px 'sourse Sans pro' , sans-serif;
     background-color: #4ea819;
-    margin: 0px 8px 9px 0px;
-    padding: 10px 20px;
+    margin: 10px 8px 9px 0px;
+    padding: 10px 10px;
+    border: 1px solid #4ea819;
 }
 #freetrial{
-     width: 270px;
-    height: 80px;
+     width: 240px;
+    height: 55px;
     color: #333c43;
     font: 20px 'sourse Sans pro' , sans-serif;
-    margin: 0px 8px 9px 0px;
-    padding: 10px 20px;
+    margin: 10px 8px 9px 16px;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    border: 1px solid gray;
 }
 /* second box */
+.topbgbox_second_box{
+    height:400px;
+    width: 100%;
+    padding-top: 50px;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.2);
+}
 .feture_bx{
-    /* border: 1px solid red; */
-    width: 300px;
-    height: 350px;
+    width: 23%;
+    height: 100%;
     float: left;
-    margin: 15px;
-    text-align: center;
-    margin-top: -20px;
+    text-align: center;  
+}
+.feature_bx_first{
+    margin-left: 6%;
 }
 h2{
     /* width: 125px;
@@ -76,26 +271,30 @@ h2{
     font-weight: bold;
 }
 h2~p{
-    /* width: 250px;
-    height: 115px; */
+    width: 250px; 
+    /* height: 115px;  */
     color: #333C43;
     font: 18px 'Sourse Sans Pro' , sans-serif;
-    margin: 0px 0px 16px;
+    margin: 0px 0px 16px 40px;
     margin-bottom: 50px;
+    /* border: 1px solid red; */
+    line-height: 30px;
 }
-a:link{
-    border: 1px solid  #333C43;
+.feture_bx > a{
     border-radius: 3px;
     padding: 12px;
     text-decoration: none;
     font: 12px 'Sourse Sans Pro' , sans-serif;
     color: #333C43;
+    border: 1px solid grey;
+}
+.watch_account_btn{
+    margin-bottom: 82px;
 }
 /* third box */
 .desk_team{
-    /* border: 1px solid black; */
-    height:500px;
-    width: 1335px;
+    height:550px;
+    width: 100%;
     padding: 60px 0px;
     font: 16px 'Sourse Sans Pro' , sans-serif;
 }
@@ -107,15 +306,17 @@ a:link{
     font: 18px 'Sourse Sans Pro' , sans-serif;
 }
 .p{
-    width: 538px;
-    height: 112px;
-    margin: 0px 0px 16px;
+    width: 480px;
+    height: 100px;
+    margin: 10px 0px 0px 16px;
     color: #333C43;
+    font-size: 18px;
 }
 .p1{
-    width: 538px;
-    height: 85px;
-    margin: 0px 0px 16px;
+    font-size: 18px;
+    width: 470px;
+    height: 100px;
+    margin: 0px 0px 0px 16px;
     color: #333C43;
 }
 .imgtick{
@@ -123,6 +324,7 @@ a:link{
     height: 50px;
     display: flex;
    align-items: center;
+   margin-left: 16px;
 }
 .imgtick>img{
     width: 30px;
@@ -133,27 +335,56 @@ a:link{
     align-items: center;
 }
 .desk_team_text_box{
-    /* border: 1px solid red; */
     width: 550px;
     height: 500px;
     color: #333c43;
     font: 16px 'sourse Sans pro' , sans-serif;
-    margin: -20px 0px 60px 60px;
+    margin: -20px 0px 60px 100px;
     padding: 20px;
+    float: left;
+}
+.imgbox{
+    width: 550px;
+    height: 380px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+.card_box_desk_time{
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.2);
+}
+/* rating Box CSS */
+#rating_box{
+    width: 100%;
+    height: 200px;
+    background-color: #4ea819;
+}
+.rating_box_img{
+    width: 80%;
+    padding-top: 2%;
+    margin:  auto;
+}
+.img_line{
+    width: 2px;
+    height: 150px;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: white;
 }
 /* last box */
 
 .bottombox{
     /* border: 1px solid black; */
-    height: 350px;
-    width: 1200px;
+    height: 370px;
+    width: 100%;
+    padding-top: 50px;
     margin: auto;
     display: flex;
+    box-shadow: 0 0 10 rgba(0,0, 0, 0.2);
 }
 .bottomboxImg{
     width: 480px;
     height: 280px;
-    margin: 20px;
+    margin: 20px 20px 70px 200px;
 }
 #content_bottom_box{
     width: 570px;
@@ -169,4 +400,257 @@ h3{
     text-align: left;
     font: 36px 'sourse Sans pro' , sans-serif;
     font-weight: bold;
+}
+.demobook{
+    width: 200px;
+    height: 50px;
+    background-color: #4ea819;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #4ea819;
+border-radius: 5px;
+}
+
+/* flickty sliding window of CEO and Maneger details */
+.Ceo_manager_detalis_box{
+    width: 100%;
+    margin-top: 40px;
+    height: 550px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.carousel-cell {
+    width: 30%;
+    height: 340px;
+     margin-top: 20px;
+     background: #ffffff;
+     border: 1px solid grey;
+     border-radius: 5px;
+     padding: 15px;
+     font-family: 'Source Sans Pro', sans-serif;
+     counter-increment: carousel-cell;
+  }
+  .flickity_long_text{
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 18px;
+   margin-bottom: 20px;
+  }
+  .carousel{
+     width: 80%;
+     height: 460px;
+     margin-top: 30px;
+     margin-left: 100px;
+     color: #475056;
+ }
+ .margin_top_desktime_text{
+     width: 45%;
+     height: 4%;
+     margin: auto;
+     text-align: center;
+ }
+ .manager_img{
+     margin-top: 20px;
+     margin-left: 20px;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     float: left;
+ }
+ .manager_img_square{
+    margin-top: 20px;
+     margin-left: 20px;
+     width: 50px;
+     height: 50px;
+     float: left;
+
+ }
+ .name_manager_text{
+     float: left;
+     margin-top: 20px;
+     margin-bottom: 0px;
+ }
+ .working_manager_text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+ .user_text_app{
+     padding-top: 40px;
+     font-size: 36px;
+     width: 68%;
+     height: 10%;
+     margin: auto;
+     text-align: center;
+ }
+ #email2{
+     width: 260px;
+     height: 50px;
+     background-color: #ffffff;
+     border: 1px solid gray;
+     font-size: 20px;
+     margin-left: 30%;
+     margin-top: 100px;
+     float: left;
+     margin-bottom: 20px;
+ }
+ .get_started_btn{
+    width: 200px;
+     height: 50px;
+     background-color: #4ea819;
+     border: 1px solid white;
+     font-size: 20px;
+     margin-left: 3%;
+     color: #ffffff;
+     margin-top: 100px;
+    clear: left;
+    margin-bottom: 20px;
+ }
+ #user_email_box{
+    width: 100%;
+ height: 300px;
+ background-color: #4ea819;
+ color: #ffffff;
+ }
+ .margin_top_text{
+     margin-top: 20px;
+ }
+ .long_text_margin_bottom{
+     margin-bottom: 37px;
+ }
+   /* .long_text_margin_bottom1{
+   margin-bottom: 10px;
+ } */
+
+ 
+  
+.bgboximg{
+      width: 400px;
+      height: 400px;
+      margin: auto;
+}
+.bgbox2{
+    border: 1px solid black;
+    margin: 10px;
+    height: 700px;
+    width: 1200px;
+    display: flex;
+}
+.guestbox{
+    border: 1px solid black;
+    height: 400px;
+    width: 1200px;
+    margin: auto;
+} 
+.text_align_center{
+    text-align: center;
+}
+#footer {
+    width: 980px;
+    height: 580px;
+    padding: 40px 20px;
+    margin: auto;
+}
+.colFooter {
+    float: left;
+    width: 167px;
+    height: 500px;
+    padding: 0px 10px;
+
+}
+#footer > .colFooter > ul > li > a {
+    color: #70777B;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    width: 152px;
+}
+#footer > .colFooter > ul > li > a:hover {
+    color: rgb(57, 109, 4);
+    text-decoration: underline;
+}
+#footer > .colFooter > ul > li {
+    color: #70777B;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    width: 152px;
+    height: 32px;
+    font-weight: 300;
+}
+._64 {
+    color: #70777B;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    width: 157px;
+    height: 64px;
+    margin-bottom: 30px;
+}
+.bold {
+    margin-top: 24px;
+    
+}
+.bold1 {
+    margin-top: 12px;
+}
+#feet {
+    width: 1050px;
+    height: 40px;
+    /* border: 1px solid #70777B; */
+    margin: auto;
+}
+.google_li_text{
+    margin-bottom: 20px;
+}
+#feet  img:hover {
+    background-color: #04aff373;
+    
+}
+.desktime {
+    float: left;
+    width: 340px;
+    height: 40px;
+    margin-right: 180px;
+}
+.svg {
+    width: 200px;
+    height: 40px;
+    float: left;
+    margin-right: 30px;
+}
+.svg img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    float: left;
+}
+.svg + div {
+    width: 300px;
+    height: 100%;
+    /* margin-right: 20px; */
+    float: left;
+}
+#drau {
+    width: 100%;
+    height: 32px;
+    padding: 30px 0px;
+    background-color: #eaeaec;
+    text-decoration-color: #70777B;
+    color: #70777B;
+}
+#drau div, #drau div > p  {
+    padding: 0px 20px;
+    float: left;
+    margin: 0;
+    margin-left: 92px;
+}
+#drau div + div{
+    padding: 0px 20px;
+    float: right;
+    margin-right: 220px;
+}
+
+.imgbox1{
+    width: 517px;
+    height: 320px;
+    margin-left: 100px;
+    margin-bottom: 30px;
 }

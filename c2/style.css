@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -21,28 +23,22 @@ nav{
 nav .logo{
     font-size: 33px;
    padding: 8px 10px;
- }
-  
-
-nav ul{
+}
+.nav_ul{
     display: flex;
-    list-style: none;
+    list-style: none; 
+    width: 800px;
 }
 nav ul li{
-    margin: 10px 3px;
+    margin: 10px 10px;
 }
 nav ul li a{
-    color: black;
+    color: #475056;
     text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
-    font-family: 'Source Sans Pro';
     letter-spacing: 1px;
     padding: 10px ;
-}
-.line{
-    background-color: green;
-    width: 100%;
-    height: 5px;
 }
 .menu-btn{
     width: 50px;
@@ -50,11 +46,11 @@ nav ul li a{
     color: grey;
     cursor: pointer;
     display: none;
- }
- #click{
+}
+#click{
      display: none;
- }
- #login_nav_btn{
+}
+#login_nav_btn{
     border: 1px solid gray;
     border-radius: 6px;
     padding-left: 14px;
@@ -62,44 +58,18 @@ nav ul li a{
 }
 .sign_up_btn{
     background-color: #4ea819;
-    border-radius: 6px;
-    padding-left: 14px;
-    padding-right: 14px;
+    border-radius: 6px;   
 }
- 
-@media screen  and (max-width:1075px){
-  nav .menu-btn{
-      display: block;
-  }
-    nav .logo {
-        text-align: center;
-    }
-    nav ul{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background-color: #ffF;
-        height: 100vh;
-        width: 100%;
-        display: block;
-        text-align: center;
-    }
-    #click:checked ~ ul{
-     left: 0%;
-
- }
-    nav ul li{
-        margin: 40px 0;
-
-    }
-    .sign_up_btn{
-      display: none;
-    } 
-    
+ul > li > a:hover {
+    color: rgb(57, 109, 4);
+    text-decoration: underline;
 }
-
-
 /* time track free trail detalis */
+.video_front_page{
+    width: 500px;
+    height: 315px;
+    border: 0px;
+}
 #time_tracking_free_trail_box{
     width: 100%;
     height: 500px;
@@ -107,14 +77,14 @@ nav ul li a{
 }
 .email_for_free_trail{
     float: left;
-    width: 50%;
+    width: 60%;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 120px;
     margin: auto;
 }
 .img_tracking_detalis{
     float: left;
-    width: 50%;
+    width: 40%;
     height: 100%;
     padding-top: 150px;
     margin: auto;
@@ -123,20 +93,24 @@ nav ul li a{
     width: 85%;
     height: 75%;
 }
-
 .automatic_text{
     width: 60%;
-    margin: 20px auto;
-    height: 35%;
+    margin: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 39%;
    font-size: 42px;
+   padding:  0 0 16px;
    color: #333c43;
+   margin-bottom: 0px;
 }
 .mobile_app_tracking_text{
-    width: 80%;
+    width: 60%;
+    margin: 2% auto;
+    font-family: 'Source Sans Pro', sans-serif;
     height: 16%;
-    margin-left: 20%;
     font-size: 20px;
     color: #333c43;
+    padding: 0 0 20px;
 }
 .put_email_trail{
     width: 80%;
@@ -159,8 +133,8 @@ nav ul li a{
     background-color: #4ea819;
     text-align: center;
     color: white;
-    font-size: 17px;
-    padding-top: 16px;
+    font-size: 20px;
+    padding-top: 10px;
 }
 .days_14_text{
     margin-top: 0.6%;
@@ -172,24 +146,23 @@ nav ul li a{
 .text-align-center{
     text-align: center;
 }
-
 /* details features box */
 #detalis_featues{
+    font-family: 'Source Sans Pro', sans-serif;
     width: 100%;
     height: 320px;
     background-color: #4EA819;
-    font-family: 'Source Sans Pro';
 }
 .featur_box {
-    width: 27%;
-    margin-left: 10%;
+    width: 29%;
+    margin-left: 9%;
     margin-top: 5%;
     height: 80%;
     float: left;
     color: #ffffff;
 }
 .featur_box2 {
-    width: 25%;
+    width: 29%;
     margin-left: 1%;
     margin-top: 5%;
     height: 80%;
@@ -207,53 +180,20 @@ nav ul li a{
     font-size: 26px;
 }
 
-
-/* high professional team choice by desk time CSS */
-#team_box_detalis{
+ /*  Top features slide window of desk time features */
+#Top_features_box{
     width: 100%;
-    height: 450px;
-    background-color: #4EA819;
-    font-family: 'Source Sans Pro';
-}
-.team_box_detalis{
-    color: white;
-}
-.high-performing_text{
-    padding-top: 40px;
-    padding-bottom: 10px;
-    font-size: 42px;
-   
-}
-.img_box_team{
-    width: 95%;
-    margin-left: 5%;
-}
-.img_line{
-    width: 2px;
-    height: 100px;
-    margin-right: 4%;
-    color: white;
-}
-.img_capture{
-    margin-left: 12%;
-    margin-right: 3%;
-}
-.img_rating{
-    margin-right: 6%;
-}
- /* slide window of desk time features */
- #Top_features_box{
-    width: 100%;
-    height: 700px;
-    font-family: 'Source Sans Pro';
+    height: 660px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .be_control_text{
-    width: 30%;
+    width: 50%;
+    padding: 0px 5%;
      margin: auto;
 }
 .top_features_btn{
     width: 60%;
-    height: 9%;
+    height: 10%;
     background-color:#ebecec ;
     margin:  2% auto;
     border: 1px solid #ebecec;
@@ -284,7 +224,6 @@ nav ul li a{
     width: 50%;
     height: 100%;
     float: left;
-    
 }
 .teams_text{
     margin-bottom: 20px;
@@ -292,6 +231,7 @@ nav ul li a{
     color: #333c43;
 }
 .font_col{
+    font-size: 20px;
     color: #333c43;
 }
 .img_of_slideshow1{
@@ -300,14 +240,68 @@ nav ul li a{
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.active, .dot:hover {
+.active {
    background-color: #4EA819;
    }
+   /* high professional team choice by desk time CSS */
+#team_box_detalis{
+    width: 100%;
+    height: 450px;
+    background-color: #4EA819;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.team_box_detalis{
+    color: white;
+}
+.high-performing_text{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 42px;
+}
+.img_box_team{
+    width: 80%;
+    margin-left: 15%;
+}
+.img_line{
+    width: 2px;
+    height: 100px;
+    margin-right: 2%;
+    margin-left: 1%;
+    color: white;
+    border: 1px solid #fff;
+}
+.white_border_img_line{
+    margin-left: 4%;
+    border: 1px solid #fff;
+}
+.img_capture{
+    width: 239px;
+    height: 90px;
+    margin-left: 15%;
+    margin-right: 4.5%;
+}
+.img_rating{
+    width: 239px;
+    height: 90px;
+    padding: 0px 16px;
+}
+.img_assets{
+    width: 160px;
+    height: 100px;
+    padding: 0px 16px;
+}
+.img_rating2{
+    width: 239px;
+    height: 90px;
+    padding: 0px 16px;
+}
+
 
  /* traking and monitoring image  */
 #monitoring_box{
     width: 100%;
-    height: 1800px;    
+    height: 1800px;  
+    font-family: 'Source Sans Pro', sans-serif;  
 }
 .tracking_heading_text{
     width: 55%;
@@ -316,7 +310,6 @@ nav ul li a{
     font-size: 42px;
     color: #333c43;
     text-align: center;
-    margin-bottom: 0px;
 }
 .monitor_daily_text{
     width: 40%;
@@ -343,12 +336,13 @@ nav ul li a{
     float: left;
 }
 .img_time_tracking{
-    width: 340px;
+    width: 350px;
     height: 280px;
-    padding: 7% 10%;
+    padding: 4% 10%;
+    margin: auto;
 }
 .auto_text {
-    width: 80%;
+    width: 100%;
     height: 40px;
     font-size: 26px;
     margin: auto;
@@ -367,7 +361,7 @@ nav ul li a{
     text-align: center;
 }
 .see_all_features_btn{
-    width: 15%;
+    width: 20%;
     height: 2.5%;
     background-color: #4eA819;
     margin: auto;
@@ -377,14 +371,16 @@ nav ul li a{
     border: 0.3px solid black;
     border: 3px;
 }
+
  /* Third Party css */
- #Third_party_box{
+#Third_party_box{
     width: 100%;
     height: 500px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .third_party_left_box{
     width: 40%;
-    margin-left: 10%;
+    margin-left: 7%;
    margin-top: 5%;
     height: 85%;
     padding-left: 10%;
@@ -394,6 +390,7 @@ nav ul li a{
     width: 30%;
     height: 66%;
     float: left;
+    margin-left: 4%;
     margin-top: 12%;
 }
 .simplify_text{
@@ -417,15 +414,16 @@ nav ul li a{
     width: 100%;
     height: 400px;
     background-color: #4ea819;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #ffffff;
 }
 .font_size_track_text{
     font-size: 18px;
 }
 .number_user_desk_time{
-    width: 90%;
+    width: 80%;
     height: 45%;
-    margin-left: 7%;
+    margin-left: 15%;
     margin-top: 5%;
 }
 .font_number{
@@ -434,31 +432,31 @@ nav ul li a{
 }
 .float_left{
     float: left;
-    margin-right: 8%;
+    margin-right: 6%;
 }
 .user_text{
     margin-left: 30%;
     margin-right: 10%;
 }
 .companies_text{
-    margin-left: 12%;
+    margin-left: 10%;
 }
+
 /* desktop and mobile app also avaliable detalis */
 #desktop_mobile_box{
     width: 100%;
     height: 750px;
-    border: 1px solid #f5f5f6;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.2);
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .monitor_text{
     width: 50%;
   margin: auto;
   font-size: 13px;
   text-align: center;
-  margin-top: 0px;
   color: #333c43;
     height: 2%;
-    margin-top: 5%;
-    
+    margin-top: 5%;  
 }
 .desktop_mobile_img{
     width: 60%;
@@ -466,7 +464,7 @@ nav ul li a{
     margin: 3% auto;
 }
 .desktop_box{
-    width: 50%;
+    width: 47%;
     float: left;
     height: 100%;
 }
@@ -476,10 +474,11 @@ nav ul li a{
     float: left;
 }
 .img_desktop{
-    width: 350px;
+    width: 300px;
     height: 200px;
 }
 .desktime_desktop_text{
+    width: 80%;
     font-size: 26px;
     margin-top: 4%;
     margin-bottom: 2%;
@@ -504,59 +503,68 @@ nav ul li a{
 
  /* flickty sliding window of CEO and Maneger details */
 .carousel-cell {
-    width: 30%;
-   height: 500px;
-    margin-right: 10px;
+     width: 30%;
+     height: 350px;
+      margin-right: 10px;
+      margin-top: 20px;
       background: #ffffff;
       border: 1px solid grey;
-  border-radius: 5px;
-  font-family: 'Source Sans Pro';
-    counter-increment: carousel-cell;
-   }
-   .carousel{
+      border-radius: 5px;
+      padding: 20px;
+      font-family: 'Source Sans Pro', sans-serif;
+      counter-increment: carousel-cell;
+}
+.flickity_long_text{
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 18px;
+}
+.carousel{
       width: 80%;
-      height: 450px;
+      height: 460px;
       margin-top: 30px;
       margin-left: 100px;
       color: #475056;
-  }
-  .Ceo_manager_detalis_box{
+}
+.Ceo_manager_detalis_box{
       width: 100%;
       margin-top: 40px;
-      height: 700px;
-  }
-  .margin_top_desktime_text{
-      margin-top: 2%;
-  }
-  .manager_img{
+      height: 550px;
+      font-family: 'Source Sans Pro', sans-serif;
+}
+.margin_top_desktime_text{
+      width: 45%;
+      height: 4%;
+      margin: auto;
+      text-align: center;
+}
+.manager_img{
       margin-top: 20px;
       margin-left: 20px;
       width: 50px;
       height: 50px;
       border-radius: 50%;
       float: left;
-  }
-  .manager_img_square{
+}
+.manager_img_square{
      margin-top: 20px;
       margin-left: 20px;
       width: 50px;
       height: 50px;
       float: left;
-
-  }
-  .name_manager_text{
+}
+.name_manager_text{
       float: left;
       margin-top: 20px;
-  }
-  .user_text_app{
+}
+.user_text_app{
       padding-top: 40px;
       font-size: 36px;
       width: 68%;
       height: 10%;
       margin: auto;
       text-align: center;
-  }
-  #email2{
+}
+#email2{
       width: 260px;
       height: 50px;
       background-color: #ffffff;
@@ -566,8 +574,8 @@ nav ul li a{
       margin-top: 100px;
       float: left;
       margin-bottom: 20px;
-  }
-  .get_started_btn{
+}
+.get_started_btn{
      width: 200px;
       height: 50px;
       background-color: #4ea819;
@@ -578,27 +586,33 @@ nav ul li a{
       margin-top: 100px;
      clear: left;
      margin-bottom: 20px;
-  }
-  #user_email_box{
+}
+#user_email_box{
      width: 100%;
-  height: 300px;
-  background-color: #4ea819;
-  color: #ffffff;
-  }
-
- 
-  
+     height: 300px;
+     background-color: #4ea819;
+      color: #ffffff;
+}
+.margin_top_text{
+      margin-top: 20px;
+}
+.long_text_margin_bottom{
+      margin-bottom: 10px;
+}
+.long_text_margin_bottom1{
+     margin-bottom: 8px;
+}
 .bgboximg{
       width: 400px;
       height: 400px;
       margin: auto;
 }
 .bgbox2{
-    border: 1px solid black;
-    margin: 10px;
-    height: 700px;
-    width: 1200px;
-    display: flex;
+     border: 1px solid black;
+     margin: 10px;
+     height: 700px;
+     width: 1200px;
+    
 }
 .guestbox{
     border: 1px solid black;
@@ -606,8 +620,381 @@ nav ul li a{
     width: 1200px;
     margin: auto;
 } 
-
-
-
-
-
+ /* footer CSS */
+ #footer {
+    width: 980px;
+    height: 580px;
+    padding: 40px 20px;
+    /* border: 1px solid #b7ccd8; */
+    margin: auto;
+}
+.colFooter {
+    float: left;
+    width: 152px;
+    height: 500px;
+    padding: 0px 20px;
+    /* border: 1px solid #b7ccd8; */
+}
+#footer > .colFooter > ul > li > a {
+    color: #70777B;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    width: 152px;
+}
+#footer > .colFooter > ul > li > a:hover {
+    color: rgb(57, 109, 4);
+    text-decoration: underline;
+}
+#footer > .colFooter > ul > li {
+    color: #70777B;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    width: 152px;
+    height: 32px;
+    font-weight: 300;
+}
+._64 {
+    color: #70777B;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    width: 152px;
+    height: 64px;
+    margin-bottom: 30px;
+}
+.bold {
+    margin-top: 24px;
+}
+.bold1 {
+    margin-top: 12px;
+}
+#feet {
+    width: 1050px;
+    height: 40px;
+    /* border: 1px solid #70777B; */
+    margin: auto;
+}
+#feet  img:hover {
+    background-color: #04aff373;
+    
+}
+.desktime {
+    float: left;
+    width: 340px;
+    height: 40px;
+    margin-right: 180px;
+}
+.svg {
+    width: 200px;
+    height: 40px;
+    float: left;
+    margin-right: 30px;
+}
+.svg img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    float: left;
+}
+.svg + div {
+    width: 300px;
+    height: 100%;
+    /* margin-right: 20px; */
+    float: left;
+}
+#drau {
+    width: 100%;
+    height: 32px;
+    padding: 30px 0px;
+    background-color: #eaeaec;
+    text-decoration-color: #70777B;
+    color: #70777B;
+}
+#drau div, #drau div > p  {
+    padding: 0px 20px;
+    float: left;
+    margin: 0;
+    margin-left: 92px;
+}
+#drau div + div{
+    padding: 0px 20px;
+    float: right;
+    margin-right: 220px;
+}
+.action-box1{
+    position: fixed;
+    left: 80%;
+    bottom: 40px;
+    width: 206px;
+    height: 68px;
+    border-radius: 0% 50%; 
+    background-color:#1b99f4;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+.question_mark_img{
+    width: 50px;
+    margin-top: 3%;
+    margin-left: 5%;
+    height: 50px;
+    float: left;
+}
+.need_any_text{
+    margin-top: 10%;
+}
+@media screen and (max-width:1150px) {
+    nav ul li{
+        margin: 10px 5px;
+    }
+    .font_number{
+        font-size: 70px;
+    } 
+    .float_left{
+        margin-right: 4%;
+    }
+    .mobile_box{
+        width: 45%;
+        margin-left: 8%;
+    }
+    .desktime_desktop_text{
+        font-size: 22px;
+    }
+    .flickity_long_text{
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .manager_img{
+        margin-left: 10px;
+    }
+    .manager_img_square{
+        margin-left: 10px;
+    } 
+}
+@media screen  and (max-width:1100px){
+      nav .menu-btn{
+         display: block;
+        }
+       nav .logo {
+          text-align: center;
+        }
+      nav ul{
+          position: fixed;
+          top: 80px;
+          left: -100%;
+          background-color: #ffF;
+          height: 100vh;
+          width: 90%;
+          display: block;
+          text-align: center;
+      }
+      #click:checked ~ ul{
+       left: 0%;
+      }
+      nav ul li{
+          margin: 40px 0;
+      }
+      .sign_up_btn{
+        display: none;
+      } 
+      .img_assets{
+        width: 128px;
+      }
+      .img_capture{
+        width: 230px;
+      }
+      .img_rating{
+        width: 230px;
+      }
+      .img_rating2{
+        width: 230px;
+      }
+      .img_time_tracking{
+        padding-left: 2%;
+        width: 240px;
+      }
+      .auto_text{
+        font-size: 20px;
+      }
+      .learn_more_text{
+        margin-top: 10px;
+      }
+      .see_all_features_btn{
+        width: 25%;
+        padding-top: 1%;
+      }
+      .third_party_rigth_box{
+        margin-left: 8%;
+      }
+      .font_number{
+        font-size: 70px;
+      }
+      .float_left{
+        margin-right: 4%;
+      }
+      .flickity_long_text{
+        font-size: 18px;
+      }
+      #time_tracking_free_trail_box{
+        width: 90%;
+        height: 800px;  
+     }
+     .email_for_free_trail{
+        width: 90%;
+        height: 60%;
+        padding-top: 100px;
+        margin-left: 10%;
+     }
+     .img_tracking_detalis{
+        width: 80%;
+        height: 30%;
+        margin: auto;
+        margin-top: 0px;
+        padding-top: 10px;
+     }
+     .automatic_text{
+        width: 80%;
+        margin: auto;
+        height: 25%;
+        font-size: 35px;
+        text-align: center;
+     }
+     .mobile_app_tracking_text{
+        width: 80%;
+        text-align: center;
+        margin: 0px auto;
+        height: 20%;
+        font-size: 20px;
+      }
+     .video_front_page{
+        width: 70%;
+        height: 100%;
+        margin-left: 300px;
+     }
+     #detalis_featues{
+        width: 100%;
+        height: 600px;
+      }
+     .featur_box {
+        width: 44%;
+        height: 40%;
+        float: left;
+     }
+     .featur_box2 {
+        width: 44%;
+        height: 40%;
+     }
+     .featur_box3{
+        margin-top: 0px;
+        padding-left: 8%;
+        width: 49%;
+        height: 40%;
+     }
+     #Top_features_box{
+        height: 1000px;
+     }
+     .slide_left_box{
+        float: none;
+        height: 40%;
+        margin-left: 20%;
+     }
+     .slide_rigth_box{
+        float: none;
+        margin-top: 7%;
+        height: 40%;
+        margin-left: 16%;
+     }
+     #team_box_detalis{
+        height: 600px;
+     }
+     .img_assets{
+        width: 220px;
+        float: left;
+     }
+     .img_capture{
+        margin-left: 7%;
+        margin-right: 4.5%;
+     }
+     #monitoring_box{
+        height: 3000px;
+     }
+     .text_monitor{
+        width: 80%;
+     }
+     .features_box1{
+        width: 40%;
+        height: 20%;
+     }
+     .tracking_heading_text{
+        height: 4%;
+     }
+     .see_all_features_btn{
+        height: 1.5%;
+        width: 30%;
+        margin-top: 100px;
+     }
+     .third_party_left_box{
+        margin-left: 4%;
+        padding-left: 2%;
+        width: 35%;
+     }
+     #desktime_number_box{
+        height: 600px;
+     }
+     .font_number{
+        font-size: 120px;
+        padding-right: 70px;
+        padding-left: 70px;
+     }
+     .user_text_1{
+        margin-left: 30%;
+     }
+     .user_text_2{
+       margin-left: 10%;
+     }
+     .k_386_number{
+        padding-left: 80px;
+     }
+     #desktop_mobile_box{
+        height: 820px;
+     }
+     .monitor_text{
+        width: 50%;
+        height: 3%;
+        margin-top: 13%;  
+     }
+     .mobile_box{
+        width: 45%;
+     }
+     .desktime_desktop_text{
+        font-size: 26px;
+        margin-top: 4%;
+        margin-left: 10%;
+     }
+     .desktop_box{
+        width: 43%;
+     }
+     .desktop_learn_more_btn{
+        margin-left: 0px;
+     }
+     .margin_top_desktime_text{
+        margin-top: 100px;
+     }   
+}
+  
+@media screen and (max-width:1250px){
+    .number_user_desk_time{
+        margin-left: 10%;
+    }
+    .font_number{
+        font-size: 75px;
+        margin-left: 4%;
+    }
+    .number_user_desk_time{
+        width: 90%;
+        margin-left: 10%;
+    }
+} 
