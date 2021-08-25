@@ -5,9 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | DeskTime</title>
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+        body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    nav{
+
+        height: 80px;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        transition: 0.2s;
+        position: sticky;
+        position: fixed;
+        justify-content: space-between;
+        padding: 0px 7% 0px 3%;
+        border: 10px solid #fff;
+        box-shadow: 0 0 10px rgba(0,0, 0, 0.2);
+        z-index: 10;
+    }
+
+    nav .logo{
+        font-size: 33px;
+        padding: 8px 8px;
+    }
+
+    nav ul{    
+        display: flex;
+        list-style: none;
+        margin-right: 100px;
+    }
+
+    nav ul li{
+        margin: 10px 10px;
+        /* width: ; */
+        /* border: 1px solid black; */
+    }
+
+    nav ul li a{
+        color: #475056;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Source Sans Pro';
+        letter-spacing: 1px;
+        padding: 10px;
+    }
+    .line{
+        background-color: green;
+        width: 100%;
+        height: 5px;
+    }
+    .menu-btn{
+        width: 50px;
+        height: 50px;
+        color: grey;
+        cursor: pointer;
+        display: none;
+    }
+    #click{
+        display: none;
+    }
+    #login_nav_btn{
+        border: 1px solid gray;
+        border-radius: 6px;
+        /* padding-left: 14px;
+        padding-right: 14px; */
+    }
+    .sign_up_btn{
+        background-color: #4ea819;
+        border-radius: 6px;
+        color: #FFFFFF;
+        /* padding-left: 7px;
+        padding-right: 7px; */
+    }
+    ul > li > a:hover {
+        color: rgb(57, 109, 4);
+        text-decoration: underline;
+    }
+
         h1 {
             font-family: 'Open Sans Condensed', sans-serif; 
             margin: 0;
@@ -119,18 +199,18 @@
             padding: 0px 20px;
             /* border: 1px solid #b7ccd8; */
         }
-        li > a {
+        #footer > .colFooter > ul > li > a {
             color: #70777B;
             list-style: none;
             font-family: 'Source Sans Pro', sans-serif;
             font-size: 20px;
             width: 152px;
         }
-        ul > li > a:hover {
+        #footer > .colFooter > ul > li > a:hover {
             color: rgb(57, 109, 4);
             text-decoration: underline;
         }
-        li {
+        #footer > .colFooter > ul > li {
             color: #70777B;
             list-style: none;
             font-family: 'Source Sans Pro', sans-serif;
@@ -146,7 +226,7 @@
             font-size: 20px;
             width: 152px;
             height: 64px;
-            
+            margin-bottom: 30px;
         }
         .bold {
             margin-top: 24px;
@@ -210,6 +290,21 @@
     </style>
 </head>
 <body>
+    <nav>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></label>
+        <div><img src="https://desktime.com/assets/img/bs4/logo-dark.svg" class="logo" /></div>
+        <ul>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Login.html" id="login_nav_btn">LOGIN</a></li>
+            <li><a href="signUp.html" class="sign_up_btn">SIGN UP</a></li>
+        </ul>
+    </nav>
     <div id="logo">
         <img src="https://desktime.com/assets/img/logo/symbol.svg"/>
         <h1>Log into Your DeskTime</h1>
