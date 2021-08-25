@@ -122,6 +122,7 @@ header ,p{
     padding: 8px 8px;
     color: #ffffff;
     font: 16px "Source Sans Pro",sans-serif;
+    border: none;
 }
 #textbox_1{
     border-radius: 2px;
@@ -136,6 +137,8 @@ header ,p{
     /* gap:10px; */
     /* width: 100%; */
     align-items: center;
+    padding: 40px;
+    margin-bottom: -75px;
 }
 .box1 , h3{
     color: #333c43;
@@ -175,7 +178,7 @@ header ,p{
     font: 16px "Source Sans Pro",sans-serif;
 }
 .viewbox{
-    border: 1px solid #333c;
+    /* border: 1px solid #333c; */
     border-radius: 5px;
     background-color: #4ea819;
     padding: 10px 15px;
@@ -195,7 +198,7 @@ header ,p{
     width: 100%;
     font: 16px "Source Sans Pro",sans-serif;
     padding: 60px 0px;
-    margin: auto;
+    margin-top: 50px;
     text-align: center;
     color: #ffffff;
     margin-bottom: 30px;
@@ -217,14 +220,19 @@ header ,p{
     padding: 8px 16px;
     margin-top: 30px;
     margin-bottom: 20px;
+    border: none;
 }
 #started{
     width: 180px;
     height: 42px;
-    background-color: #ffffff;
     padding: 7px 32px;
     font: 20px "Source Sans Pro",sans-serif;
     margin: 10px;
+    border: none;
+    color: #ffffff;
+    background-color: #4EA819;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
 }
 .imgtick{
     /* border: 1px solid red; */
@@ -237,7 +245,7 @@ header ,p{
     width: 30px;
 }
 a:link {
-text-decoration: none;
+text-decoration: none; 
 }
  a:hover {
 text-decoration: underline;
@@ -247,45 +255,53 @@ text-decoration: underline;
         #layout {
             display: grid;
             gap: 5px;
+            padding: 100px;
         }
 
         .top {
             /* border: 2px solid red; */
             grid-area: top;
             height: 150px;
+            padding: 20px;
         }
         .top_1{
            /* border: 2px solid red; */
             grid-area: top_1;
             height: 60px;
+             padding: 20px;
         }
         .one {
             /* border: 2px solid red; */
             grid-area: one;
             height: 400px;
+            font: 16px 'Source Sans Pro' , Sans-Serif;
         }
 
         .two {
            /* border: 2px solid red; */
             grid-area: two;
             height: 400px;
+            font: 16px 'Source Sans Pro' , Sans-Serif;
         }
 
         .three {
              /* border: 2px solid red; */
             grid-area: three;
             height: 400px;
+            font: 16px 'Source Sans Pro' , Sans-Serif;
         }
 
         .four {
             /* border: 2px solid red; */
             grid-area: four;
             height: 400px;
+            font: 16px 'Source Sans Pro' , Sans-Serif;
         }
         .five{
             /* border: 2px solid red; */
             grid-area: five;
             height: 400px;
+            font: 16px 'Source Sans Pro' , Sans-Serif;
         }
 
         @media screen and (max-width:600px) {
@@ -322,9 +338,11 @@ text-decoration: underline;
             display: flex;
             height: 50px;
             margin-top: -20px;
+             padding: 30px;
         }
         .top_1{
             display: flex;
+             padding: 30px;
         }
         .top_1_img{
     height: 150px;
@@ -348,7 +366,10 @@ text-decoration: underline;
 .colFooter , ul , li{
         list-style: none;
 }
+.colFooter , ul , li,a:hover{
+    color: #4EA819;
+}
 .color_A{
     color: #707770;
-    font: 20px 'Source Sans Pro' Sans-sarif;
+    /* font: 20px 'Source Sans Pro' Sans-sarif; */
 }

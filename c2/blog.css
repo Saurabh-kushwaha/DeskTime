@@ -99,7 +99,7 @@ nav ul li a {
 #layout_1 {
   display: grid;
   grid-gap: 20px;
-  /* padding: 40px; */
+  padding: 40px;
 }
 .head_1 {
   grid-area: head_1;
@@ -128,16 +128,23 @@ nav ul li a {
 }
 #head_1_input_box_size {
   height: 20px;
-  width: 200px;
+  width: 230px;
   padding: 16px;
+   font: 16px 'Sourse Sans Pro', sans-serif;
 }
 #head_1_input_box_size_1 {
-  height: 35px;
-  width: 100px;
+  height: 37px;
+  width: 120px;
   padding: 2px;
   background-color: #4ea819;
   color: #ffffff;
   font-size: 15px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.head_1_A{
+   word-spacing: 5px;
 }
 .head_1_A > p > a {
   /* border: 1px solid black; */
@@ -258,7 +265,6 @@ a:hover {
 }
 .mid_6 {
   grid-area: mid_6;
-  /* border: 1px solid black; */
   height: 200px;
   width: 122%;
   margin-left: -100px;
@@ -272,14 +278,15 @@ a:hover {
   float: left;
   font: 36px "Open Sans Condensed", sans-serif;
   color: #ffffff;
-  margin-left: 60px;
+  margin-left: 100px;
 }
 .mid_1_subscribe {
-  width: 70%;
+  width: 80%;
   float: left;
-  height: 80px;
-  padding: 40px;
-  margin-left: 60px;
+  height: 150px;
+  padding-top: 40px;
+  padding-left: 20px;
+  margin-left: 30px;
   color: #ffffff;
   margin-top: 10px;
 }
@@ -294,7 +301,7 @@ a:hover {
 }
 #mid_1_input {
   height: 35px;
-  width: 150px;
+  width: 200px;
 }
 .p_change_a,
 a {
@@ -316,15 +323,17 @@ a {
   /* border: 1px solid black; */
   height: 840px;
 }
-.mid_5 {
+ .mid_5 {
   grid-area: mid_5;
-  border: 1px solid #707770;
+  /* border: 1px solid #707770; */
+  background-color: #707773;
   height: 250px;
   width: 91%;
 }
 .mid_7 {
   grid-area: mid_7;
-  border: 1px solid #707773;
+  /* border: 1px solid #707773; */
+  background-color: #707773;
   height: 250px;
   width: 122%;
   margin-left: -100px;
@@ -339,8 +348,11 @@ a {
   color: #ffffff;
   font: 18px "Open Sans Condensed", sans-serif;
 }
+#e_book_btn{
+  border: 1px solid #4ea819;
+}
 .mid_5_p {
-  width: 40%;
+  width: 50%;
   height: 150px;
   /* border: 1px solid red; */
   float: left;
@@ -363,9 +375,9 @@ a {
   width: 200px;
   background-color: #4ea819;
   color: #ffffff;
-}
+} 
 /* woeking in the bootom part */
-.bottom_1 {
+.bottom_1 {  
   grid-area: bottom_1;
   /* border: 1px solid black; */
   height: 840px;
@@ -385,12 +397,13 @@ a {
   border: 1px solid black;
   height: 240px;
   margin-bottom: 20px;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVTk1QXuGKe0gJAP7mhOoWk9VCfBX5WSDmIw&usqp=CAU);
+  background-image: url(https://i.stack.imgur.com/nItQK.png);
 }
 #bottom_4_button {
   height: 40px;
   width: 300px;
   font: 16px "Open Sans Condensed", sans-serif;
+  border: none;
 }
 @media screen and (max-width: 600px) {
   #layout_1 {
@@ -410,19 +423,21 @@ a {
     height: 400px;
   }
   .mid_1 {
-    width: 460px;
+    width: 440px;
     margin-bottom: -20px;
   }
   .mid_6 {
-    width: 560px;
+    width: 440px;
+    margin-left: 0px;
   }
   .mid_5 {
-    width: 470px;
+    width: 450px;
     height: 300px;
     margin-bottom: -20px;
   }
   .mid_7 {
-    width: 570px;
+    width: 450px;
+     margin-left: 0px;
   }
   .bottom_4 {
     width: 470px;
@@ -451,46 +466,53 @@ a {
 #layout {
   display: grid;
   gap: 5px;
-  /* padding: 40px; */
+  padding: 100px;
 }
 
 .top {
   /* border: 2px solid red; */
   grid-area: top;
   height: 150px;
+  padding: 20px;
 }
 .top_1 {
   /* border: 2px solid red; */
   grid-area: top_1;
   height: 60px;
+  padding: 20px;
 }
 .one {
   /* border: 2px solid red; */
   grid-area: one;
   height: 400px;
+  font: 16px 'Source Sans Pro' , Sans-serif;
 }
 
 .two {
   /* border: 2px solid red; */
   grid-area: two;
   height: 400px;
+  font: 16px 'Source Sans Pro' , Sans-serif;
 }
 
 .three {
   /* border: 2px solid red; */
   grid-area: three;
   height: 400px;
+   font: 16px 'Source Sans Pro' , Sans-serif;
 }
 
 .four {
   /* border: 2px solid red; */
   grid-area: four;
   height: 400px;
+   font: 16px 'Source Sans Pro' , Sans-serif;
 }
 .five {
   /* border: 2px solid red; */
   grid-area: five;
   height: 400px;
+   font: 16px 'Source Sans Pro' , Sans-serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -526,9 +548,11 @@ a {
     display: flex;
     height: 50px;
     margin-top: -20px;
+    padding: 30px;
   }
   .top_1 {
     display: flex;
+    padding: 30px;
   }
   .top_1_img {
     height: 150px;
@@ -554,7 +578,12 @@ ul,
 li {
   list-style: none;
 }
+.colFooter,
+ul,
+li,a:hover{
+  color: #4ea819;
+}
 .color_A {
   color: #707770;
-  font: 20px "Source Sans Pro" Sans-sarif;
+  /* font: 20px "Source Sans Pro" Sans-sarif; */
 }
