@@ -7,7 +7,7 @@ Desktime.com is a real-time automatic time tracking software that track and anal
 In this Clone website we use the ##HTML, ##CSS and ##JAVASCRIPT.
 
   ## If you clone this project in your local machine then do following Step-
-  ## git clone  https://github.com/Saurabh-kushwaha/DeskTime.git
+     git clone  https://github.com/Saurabh-kushwaha/DeskTime.git
      cd desktime
      open live server
 
